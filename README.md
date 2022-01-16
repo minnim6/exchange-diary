@@ -11,12 +11,11 @@
 그룹 혹은 1 대 1 이 아니여도 공개된 공간에 게시한 다른 사람들의 하루를 읽을 수 있고 나도 공유할 수 있어요.
 
 ## 프로젝트 참여자
-
-- minnim6 (https://github.com/ynifamily3)
-    - 백엔드 담당
-- ynifamily3 (https://github.com/minnim6)
-    - 프론트엔드 담당
-
+- 백엔드 담당
+ minnim6 (https://github.com/minnim6)
+- 프론트 담당
+ ynifamily3 (https://github.com/ynifamily3)
+    
 ### ☑️   **사용기술**
 
 ---
