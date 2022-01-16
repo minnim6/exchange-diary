@@ -27,4 +27,5 @@
 ### ☑️   database erd
 
 ---
-![스크린샷 2022-01-16 오후 8 10 48](https://user-images.githubusercontent.com/70092162/149657522-5cf7df67-ef63-4f72-a6ae-1f8af01cb417.png)
+![스크린샷 2022-01-16 오후 8 32 57](https://user-images.githubusercontent.com/70092162/149658142-c47a1cf4-c06d-40ad-8487-3991956deea1.png)
+
