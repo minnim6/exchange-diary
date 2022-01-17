@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://exchange-diary.cpz2wl0djyhk.us-east-2.rds.amazonaws.com:3306/diary
+    username: root
+    password: alwjd9qjs
