@@ -1,4 +1,5 @@
 spring:
   profiles:
-    - data
-
+    include:
+      - jwt
+      - data
