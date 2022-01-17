@@ -5,10 +5,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.Date;
 
-
+@NoArgsConstructor
+@Getter
 public class MemberDto {
 
     @NoArgsConstructor
@@ -25,6 +27,10 @@ public class MemberDto {
                     .memberPassword(this.memberPassword)
                     .build();
         }
+
+        public void setPassword(String memberPassword){
+            this.memberPassword = memberPassword;
+        }
     }
 
     @NoArgsConstructor
@@ -36,17 +42,24 @@ public class MemberDto {
     @NoArgsConstructor
     @Getter
     public static class RequestLogin {
-        private String memberNickname;
+        private String memberId;
         private String memberPassword;
     }
 
     @NoArgsConstructor
     @Getter
-    public static class Response {
+    public static class ResponseInfo {
         private Long memberNumber;
         private String memberId;
         private String memberNickname;
         private String memberPassword;
         private Date memberJoinDate;
+    }
+
+    @NoArgsConstructor
+    @Getter
+    public static class ResponseNickname {
+        private Long memberNumber;
+        private String memberNickname;
     }
 }
