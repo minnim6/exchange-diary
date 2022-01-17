@@ -1,4 +1,4 @@
-package com.exchange.diary.repository;
+package com.exchange.diary.domain.member;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

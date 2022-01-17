@@ -1,6 +1,6 @@
 package com.exchange.diary.domain.team;
 
-import com.exchange.diary.repository.Member;
+import com.exchange.diary.domain.member.Member;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

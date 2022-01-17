@@ -1,4 +1,4 @@
-package com.exchange.diary.repository;
+package com.exchange.diary.domain.member;
 
 
 import com.exchange.diary.domain.team.TeamMember;

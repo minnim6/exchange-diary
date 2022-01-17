@@ -5,27 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1556ea7d-1f3b-4147-ad2a-dbee13ff23ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/diary/Diary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/image/BackgroundImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/image/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/image/StickerImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/sticker/Sticker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/Team.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/repository/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/diary/Diary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/image/BackgroundImage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/image/Image.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/image/StickerImage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/member/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/sticker/Sticker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/team/Team.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/team/TeamList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/exchange/diary/DiaryApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/diary/Diary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/diary/Diary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/repository/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/member/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/member/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/exchange/diary/repository/MemberRepositoryTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +92,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MemberRepositoryTest.createMemberTest">
+  <component name="RunManager" selected="JUnit.MemberRepositoryTest.findMemberTest">
     <configuration name="MemberRepositoryTest.createMemberTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -153,6 +139,54 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="MemberRepositoryTest.deleteMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diary.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exchange.diary.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exchange.diary.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.repository.MemberRepositoryTest" />
+      <option name="METHOD_NAME" value="deleteMemberTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberRepositoryTest.findMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diary.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exchange.diary.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exchange.diary.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.repository.MemberRepositoryTest" />
+      <option name="METHOD_NAME" value="findMemberTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberRepositoryTest.updateMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diary.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exchange.diary.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exchange.diary.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.repository.MemberRepositoryTest" />
+      <option name="METHOD_NAME" value="updateMemberTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DiaryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="diary.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.exchange.diary.DiaryApplication" />
@@ -162,6 +196,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MemberRepositoryTest.findMemberTest" />
+        <item itemvalue="JUnit.MemberRepositoryTest.deleteMemberTest" />
+        <item itemvalue="JUnit.MemberRepositoryTest.updateMemberTest" />
         <item itemvalue="Gradle.MemberRepositoryTest.createMemberTest" />
         <item itemvalue="Gradle.MemberRepositoryTest.setup" />
       </list>
@@ -178,7 +215,7 @@
       <workItem from="1642072852444" duration="6000" />
       <workItem from="1642072929236" duration="885000" />
       <workItem from="1642325734025" duration="2914000" />
-      <workItem from="1642393863916" duration="2669000" />
+      <workItem from="1642393863916" duration="7859000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,7 @@ package com.exchange.diary.domain.diary;
 
 import com.exchange.diary.domain.image.BackgroundImage;
 import com.exchange.diary.domain.image.Image;
-import com.exchange.diary.repository.Member;
+import com.exchange.diary.domain.member.Member;
 import com.exchange.diary.domain.sticker.Sticker;
 import com.exchange.diary.domain.team.Team;
 import lombok.Getter;
