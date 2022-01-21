@@ -13,7 +13,7 @@ public class TeamMember {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    private Long teamListId;
+    private Long teamMemberId;
 
     @JoinColumn(name = "team_id")
     @ManyToOne
