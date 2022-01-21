@@ -1,10 +1,9 @@
-package com.exchange.diary.domain.member.dto;
+package com.exchange.diary.domain.member;
 
 import com.exchange.diary.domain.member.Member;
-import lombok.Builder;
-import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import com.exchange.diary.domain.team.Team;
+import com.exchange.diary.domain.team.TeamMember;
+import lombok.*;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.Date;
@@ -46,14 +45,42 @@ public class MemberDto {
         private String memberPassword;
     }
 
-    @NoArgsConstructor
+    @AllArgsConstructor
+    @Getter
+    public static class ResponseMyTeam{
+        private Long teamId;
+        private String teamName;
+        private int teamTotalMemberNumber;
+        private int wroteTodayMemberNumber;
+
+        public ResponseMyTeam(TeamMember teamMember, Team team, int wroteTodayMemberNumber){
+            this.teamId = teamMember.getTeam().getTeamId();
+            this.teamName = teamMember.getTeam().getTeamName();
+            this.teamTotalMemberNumber = team.getMemberList().size();
+            this.wroteTodayMemberNumber = wroteTodayMemberNumber;
+        }
+
+        public void setTeamTotalMemberNumber(int totalMemberNumber){
+            this.teamTotalMemberNumber = totalMemberNumber;
+        }
+
+        public void setWroteTodayMemberNumber(int wroteTodayMemberNumber){
+            this.wroteTodayMemberNumber = wroteTodayMemberNumber;
+        }
+    }
+
+    @AllArgsConstructor
     @Getter
     public static class ResponseInfo {
-        private Long memberNumber;
         private String memberId;
         private String memberNickname;
-        private String memberPassword;
         private Date memberJoinDate;
+
+        public ResponseInfo(Member member){
+           this.memberId = member.getMemberId();
+           this.memberNickname = member.getMemberNickname();
+           this.memberJoinDate = member.getMemberJoinDate();
+        }
     }
 
     @NoArgsConstructor

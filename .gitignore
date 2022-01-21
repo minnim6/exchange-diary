@@ -22,5 +22,5 @@ gradle-app.setting
 **/build/
 
 # End of https://www.toptal.com/developers/gitignore/api/gradle
-src/main/resources/application-data.yml
+src/main/resources/application-data.yml 
 src/main/resources/application-jwt.yml

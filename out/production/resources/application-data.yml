@@ -7,7 +7,7 @@ spring:
         format_sql: true
     show-sql: true
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://exchange-diary.cpz2wl0djyhk.us-east-2.rds.amazonaws.com:3306/diary
     username: root
     password: alwjd9qjs
