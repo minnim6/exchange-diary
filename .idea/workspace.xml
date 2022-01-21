@@ -5,21 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1556ea7d-1f3b-4147-ad2a-dbee13ff23ad" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/MemberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/MemberService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/jwt/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/jwt/JwtUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/application-data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application-data.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/diary/DiaryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/diary/DiaryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/member/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/member/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/member/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/member/dto/MemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/member/MemberDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamMember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamMemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/infrastructure/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/infrastructure/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/infrastructure/jwt/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/infrastructure/jwt/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/DiaryApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/DiaryApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/diary/Diary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/diary/Diary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/diary/DiaryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/diary/DiaryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/image/BackgroundImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/image/BackgroundImage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/image/BackgroundImageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/image/BackgroundImageRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/image/Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/image/Image.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/image/ImageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/image/ImageRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/image/StickerImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/image/StickerImage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/image/StickerImageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/image/StickerImageRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/sticker/Sticker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/sticker/Sticker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/sticker/StickerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/sticker/StickerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/Team.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamMember.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamMemberRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamMemberRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/repository/Member$MemberBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/repository/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/repository/MemberRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,37 +59,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2401gbOqzepEaGkvWHdK4JqtHVT" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RunManager">
     <configuration name="DiaryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -92,20 +79,8 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="1556ea7d-1f3b-4147-ad2a-dbee13ff23ad" name="Changes" comment="" />
-      <created>1642752804272</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1642752804272</updated>
-      <workItem from="1642752806620" duration="4629000" />
-    </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -117,9 +92,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
