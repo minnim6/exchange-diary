@@ -12,3 +12,5 @@ spring:
         format_sql: true
         hbm2ddl:
     show-sql: true
+jwt:
+  secret_key: "testKey"
