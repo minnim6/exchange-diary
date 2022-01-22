@@ -21,7 +21,8 @@ public class JwtFilter extends OncePerRequestFilter {
 
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
-        return request.getServletPath().contains("login") | request.getServletPath().contains("jwt");
+        return !request.getServletPath().contains("login") | !request.getServletPath().contains("jwt")|
+                !request.getServletPath().contains("sign")|!request.getServletPath().equals("/");
     }
 
     @Override

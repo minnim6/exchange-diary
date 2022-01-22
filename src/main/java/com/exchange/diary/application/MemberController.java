@@ -18,7 +18,7 @@ public class MemberController {
     }
 
     @PostMapping("/sign")
-    public void singMember(@RequestBody MemberDto.RequestSignup requestSignup){
+    public void signMember(@RequestBody MemberDto.RequestSignup requestSignup){
         memberService.signupMember(requestSignup);
     }
 

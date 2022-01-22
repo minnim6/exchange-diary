@@ -6,7 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="1556ea7d-1f3b-4147-ad2a-dbee13ff23ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/MemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/diary/DiaryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/diary/DiaryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/MemberRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/MemberRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/MemberService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/dto/MemberDto$RequestLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/dto/MemberDto$RequestSignup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/dto/MemberDto$RequestUpdate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/dto/MemberDto$ResponseInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/dto/MemberDto$ResponseNickname.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/dto/MemberDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamMember.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/jwt/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/jwt/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/DiaryApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/DiaryApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/repository/MemberRepositoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +105,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
   </component>
-  <component name="RunManager" selected="Gradle.exchange-diary [build]">
+  <component name="RunManager" selected="Spring Boot.DiaryApplication">
     <configuration name="exchange-diary [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -113,6 +127,21 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="DiaryApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diary.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exchange.diary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exchange.diary" />
+      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.DiaryApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DiaryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="diary.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.exchange.diary.DiaryApplication" />
@@ -122,6 +151,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DiaryApplicationTests" />
         <item itemvalue="Gradle.exchange-diary [build]" />
       </list>
     </recent_temporary>
@@ -135,6 +165,7 @@
       <option name="presentableId" value="Default" />
       <updated>1642752804272</updated>
       <workItem from="1642752806620" duration="4629000" />
+      <workItem from="1642766034422" duration="1846000" />
     </task>
     <servers />
   </component>
