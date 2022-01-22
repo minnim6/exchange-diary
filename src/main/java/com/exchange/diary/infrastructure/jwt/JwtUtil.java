@@ -62,7 +62,7 @@ public class JwtUtil {
 
         Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
         authorities.add(new SimpleGrantedAuthority("ROLE_MEMBER"));
-        UserDetails userDetails = new User(claims.getSubject(), "", authorities);
+        UserDetails userDetails = new User((String) claims.get(AUTHORITIES_KEY), "", authorities);
 
         return new UsernamePasswordAuthenticationToken(userDetails, "", authorities);
     }

@@ -7,20 +7,9 @@
     <list default="true" id="1556ea7d-1f3b-4147-ad2a-dbee13ff23ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/MemberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/diary/DiaryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/diary/DiaryRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/MemberRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/MemberRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/MemberService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/dto/MemberDto$RequestLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/dto/MemberDto$RequestSignup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/dto/MemberDto$RequestUpdate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/dto/MemberDto$ResponseInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/dto/MemberDto$ResponseNickname.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/member/dto/MemberDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamMember.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/jwt/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/jwt/JwtUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/DiaryApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/DiaryApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/repository/MemberRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/member/MemberRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +155,7 @@
       <updated>1642752804272</updated>
       <workItem from="1642752806620" duration="4629000" />
       <workItem from="1642766034422" duration="1846000" />
+      <workItem from="1642834681129" duration="4771000" />
     </task>
     <servers />
   </component>

@@ -12,7 +12,7 @@ public class MemberController {
 
     private final MemberService memberService;
 
-    @GetMapping("/login")
+    @GetMapping("/login1")
     public Jwt.Response loginMember(@RequestBody MemberDto.RequestLogin requestLogin){
         return memberService.loginMember(requestLogin);
     }
