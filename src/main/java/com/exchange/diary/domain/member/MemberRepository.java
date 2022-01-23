@@ -10,7 +10,7 @@ public interface MemberRepository extends JpaRepository<Member,Long> {
     //TODO N+1 처리
     Member findByMemberId(String memberId);
     Member findByMemberNumber(Long memberNumber);
-    boolean existsByMemberIdAndMemberNickname(String memberId,String memberNickname);
+    boolean existsByMemberId(String memberId);
 
 
 }

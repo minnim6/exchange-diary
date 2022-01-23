@@ -8,11 +8,12 @@ import org.springframework.web.bind.annotation.*;
 
 @AllArgsConstructor
 @RestController
+@RequestMapping("/member")
 public class MemberController {
 
     private final MemberService memberService;
 
-    @GetMapping("/login1")
+    @PostMapping("/login")
     public Jwt.Response loginMember(@RequestBody MemberDto.RequestLogin requestLogin){
         return memberService.loginMember(requestLogin);
     }
@@ -22,12 +23,12 @@ public class MemberController {
         memberService.signupMember(requestSignup);
     }
 
-    @DeleteMapping("/delete")
+    @DeleteMapping
     public void deleteMember(){
         memberService.deleteMember();
     }
 
-    @PatchMapping("/update")
+    @PatchMapping
     public MemberDto.ResponseInfo updateMember(MemberDto.RequestUpdate requestUpdate){
         return memberService.updateMember(requestUpdate);
     }

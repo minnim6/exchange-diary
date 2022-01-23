@@ -7,4 +7,8 @@ import lombok.NoArgsConstructor;
 @Getter
 public class TeamDto {
 
+    public static class RequestCreateTeam{
+        String teamName;
+    }
+
 }

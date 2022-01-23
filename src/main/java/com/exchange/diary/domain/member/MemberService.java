@@ -61,8 +61,11 @@ public class MemberService {
     }
 
     public void signupMember(MemberDto.RequestSignup requestSignup) {
+        if(isDuplicationCheckMember(requestSignup)){
+            throw new RuntimeException(); //TODO 커스텀 에러처리
+        }
         requestSignup.setPassword(passwordEncoder.encode(requestSignup.getMemberPassword()));
-        Member member = memberRepository.save(requestSignup.toEntity());
+        memberRepository.save(requestSignup.toEntity());
     }
 
     public void deleteMember(){
@@ -81,7 +84,7 @@ public class MemberService {
     }
 
     private boolean isDuplicationCheckMember(MemberDto.RequestSignup requestSignup){
-        return !memberRepository.existsByMemberIdAndMemberNickname(requestSignup.getMemberId(), requestSignup.getMemberNickname());
+        return memberRepository.existsByMemberId(requestSignup.getMemberId());
     }
 
     private Long getMemberNumber(){

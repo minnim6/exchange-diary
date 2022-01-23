@@ -1,6 +1,7 @@
 package com.exchange.diary.domain.team;
 
 import com.exchange.diary.domain.member.Member;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -27,4 +28,11 @@ public class Team {
 
     @OneToMany(mappedBy = "team")
     private List<TeamMember> memberList = new ArrayList<>();
+
+    @Builder
+    public Team(String teamName,Member member){
+        this.teamName = teamName;
+        this.memberAdmin = member;
+    }
+
 }
