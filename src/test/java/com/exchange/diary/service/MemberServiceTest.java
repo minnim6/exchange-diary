@@ -61,21 +61,4 @@ public class MemberServiceTest {
         assertThat(memberRepository.findByMemberNumber(1L)).isNotNull();
     }
 
-    @DisplayName("회원가입 실패 테스트")
-    @Test
-    public void signMemberFailTest(){
-        //given
-        given(memberRepository.existsByMemberId(signupMember.getMemberId())).willReturn(true);
-        given(memberRepository.save(any())).willReturn(member);
-        given(memberRepository.findByMemberNumber(1L)).willReturn(member);
-        //when
-        try {
-            memberService.signupMember(signupMember);
-        }catch (NullPointerException e){
-           // assertThat()
-        }
-        //then
-
-    }
-
 }
