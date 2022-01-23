@@ -7,6 +7,7 @@ import com.exchange.diary.domain.member.MemberRepository;
 import com.exchange.diary.domain.member.MemberService;
 import com.exchange.diary.domain.team.TeamRepository;
 import com.exchange.diary.infrastructure.jwt.JwtUtil;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -29,27 +30,52 @@ public class MemberServiceTest {
 
     MemberService memberService = new MemberService(memberRepository,teamRepository,diaryRepository,jwtUtil,passwordEncoder);
 
-    @DisplayName("회원가입 성공 테스트")
-    @Test
-    public void signMemberTest(){
+    Member member;
 
+    MemberDto.RequestSignup signupMember = new MemberDto.RequestSignup();
+
+    @BeforeEach
+    public void setup(){
         String memberId = "id";
         String memberPassword = passwordEncoder.encode("password");
         String memberNickname = "nickname";
 
-        Member member = Member.builder()
+         member = Member.builder()
                 .memberId(memberId)
                 .memberPassword(memberPassword)
                 .memberNickname(memberNickname)
                 .build();
-        //given id,nickname,password
-        MemberDto.RequestSignup signupMember = new MemberDto.RequestSignup();
 
+    }
+
+    @DisplayName("회원가입 성공 테스트")
+    @Test
+    public void signMemberTest(){
+        //given
         given(memberRepository.existsByMemberId(signupMember.getMemberId())).willReturn(false);
         given(memberRepository.save(any())).willReturn(member);
+        given(memberRepository.findByMemberNumber(1L)).willReturn(member);
         //when
         memberService.signupMember(signupMember);
         //then
+        assertThat(memberRepository.findByMemberNumber(1L)).isNotNull();
+    }
+
+    @DisplayName("회원가입 실패 테스트")
+    @Test
+    public void signMemberFailTest(){
+        //given
+        given(memberRepository.existsByMemberId(signupMember.getMemberId())).willReturn(true);
+        given(memberRepository.save(any())).willReturn(member);
+        given(memberRepository.findByMemberNumber(1L)).willReturn(member);
+        //when
+        try {
+            memberService.signupMember(signupMember);
+        }catch (NullPointerException e){
+            assertThat()
+        }
+        //then
+
     }
 
 }

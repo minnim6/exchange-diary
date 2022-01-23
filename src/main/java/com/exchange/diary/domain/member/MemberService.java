@@ -35,7 +35,7 @@ public class MemberService {
     public Jwt.Response loginMember(MemberDto.RequestLogin requestLogin) {
         //TODO null 처리
         Member member = memberRepository.findByMemberId(requestLogin.getMemberId());
-        if(isMatchesPassword(member.getMemberPassword(),requestLogin.getMemberPassword())){
+        if(isMatchesPassword(requestLogin.getMemberPassword(),member.getMemberPassword())){
             return jwtUtil.createJwt(member.getMemberNumber());
         }
         throw new NullPointerException();
@@ -92,7 +92,7 @@ public class MemberService {
     }
 
     private boolean isMatchesPassword(String encoderPassword,String password) {
-        return passwordEncoder.matches(encoderPassword,password);
+        return passwordEncoder.matches(password,encoderPassword);
     }
 
 }
