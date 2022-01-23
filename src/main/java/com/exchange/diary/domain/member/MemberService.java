@@ -91,7 +91,7 @@ public class MemberService {
         return Long.valueOf(SecurityContextHolder.getContext().getAuthentication().getName());
     }
 
-    private boolean isMatchesPassword(String encoderPassword,String password) {
+    private boolean isMatchesPassword(String password,String encoderPassword) {
         return passwordEncoder.matches(password,encoderPassword);
     }
 
