@@ -1,6 +1,7 @@
 package com.exchange.diary.domain.team;
 
 import com.exchange.diary.domain.member.Member;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -22,4 +23,10 @@ public class TeamMember {
     @JoinColumn(name = "member_number")
     @ManyToOne
     private Member member;
+
+    @Builder
+    public TeamMember(Team team,Member member){
+        this.member = member;
+        this.team = team;
+    }
 }

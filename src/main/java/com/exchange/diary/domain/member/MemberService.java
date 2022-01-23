@@ -52,11 +52,11 @@ public class MemberService {
                 .collect(Collectors.toList());
     }
 
-    public Team getMyTeam(Long teamId){
+    private Team getMyTeam(Long teamId){
         return teamRepository.findById(teamId).orElseThrow(NullPointerException::new); //TODO 커스텀 에러처리
     }
 
-    public int findWroteTodayMemberNumber(Team team){
+    private int findWroteTodayMemberNumber(Team team){
         return diaryRepository.countAllByTeamAndDiaryDate(team,new Date());
     }
 

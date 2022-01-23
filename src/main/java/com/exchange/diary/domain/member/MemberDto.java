@@ -38,6 +38,7 @@ public class MemberDto {
         private String memberNickname;
     }
 
+    @AllArgsConstructor
     @NoArgsConstructor
     @Getter
     public static class RequestLogin {

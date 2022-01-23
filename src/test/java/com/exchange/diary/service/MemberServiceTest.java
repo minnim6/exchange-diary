@@ -6,6 +6,7 @@ import com.exchange.diary.domain.member.MemberDto;
 import com.exchange.diary.domain.member.MemberRepository;
 import com.exchange.diary.domain.member.MemberService;
 import com.exchange.diary.domain.team.TeamRepository;
+import com.exchange.diary.infrastructure.jwt.Jwt;
 import com.exchange.diary.infrastructure.jwt.JwtUtil;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -13,11 +14,12 @@ import org.junit.jupiter.api.Test;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 public class MemberServiceTest {
 
@@ -61,4 +63,15 @@ public class MemberServiceTest {
         assertThat(memberRepository.findByMemberNumber(1L)).isNotNull();
     }
 
+    @DisplayName("로그인 성공 테스트")
+    @Test
+    public void loginTest(){
+        given(memberRepository.save(any())).willReturn(member);
+        given(memberRepository.findByMemberId("id")).willReturn(member);
+        given(passwordEncoder.matches("password",member.getMemberPassword())).willReturn(true);
+        MemberDto.RequestLogin requestLogin = new MemberDto.RequestLogin("id","password");
+       // Jwt.Response response = memberService.loginMember(requestLogin);
+
+       // assertThat(response).isNotNull();
+    }
 }

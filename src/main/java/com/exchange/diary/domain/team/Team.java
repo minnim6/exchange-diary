@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 
 @Getter
@@ -30,9 +31,10 @@ public class Team {
     private List<TeamMember> memberList = new ArrayList<>();
 
     @Builder
-    public Team(String teamName,Member member){
+    public Team(String teamName,Member memberAdmin){
         this.teamName = teamName;
-        this.memberAdmin = member;
+        this.memberAdmin = memberAdmin;
+        this.teamLink = Base64.getEncoder().encodeToString(memberAdmin.getMemberNickname().getBytes());
     }
 
 }
