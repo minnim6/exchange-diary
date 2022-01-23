@@ -72,7 +72,7 @@ public class MemberServiceTest {
         try {
             memberService.signupMember(signupMember);
         }catch (NullPointerException e){
-            assertThat()
+           // assertThat()
         }
         //then
 
