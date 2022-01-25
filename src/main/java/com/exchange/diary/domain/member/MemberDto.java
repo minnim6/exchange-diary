@@ -32,6 +32,7 @@ public class MemberDto {
         }
     }
 
+    @AllArgsConstructor
     @NoArgsConstructor
     @Getter
     public static class RequestUpdate{

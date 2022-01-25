@@ -21,8 +21,8 @@ public class JwtFilter extends OncePerRequestFilter {
 
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
-        return request.getServletPath().contains("login") | request.getServletPath().contains("jwt") |
-              request.getServletPath().contains("sign") | request.getServletPath().equals("/");
+        String url = String.valueOf(request.getRequestURL());
+        return url.contains("login") | url.contains("jwt") | url.contains("sign") | url.equals("/");
     }
 
     @Override
@@ -30,9 +30,7 @@ public class JwtFilter extends OncePerRequestFilter {
         String token = request.getHeader(AUTHORIZATION_HEADER);
         if (!token.isEmpty() && jwtUtil.isValidateToken(token)) {
             Authentication authentication = jwtUtil.getAuthentication(token);
-            System.out.println(authentication.getName());
             SecurityContextHolder.getContext().setAuthentication(authentication);
-            System.out.println(Long.valueOf(SecurityContextHolder.getContext().getAuthentication().getName()));
         }
         filterChain.doFilter(request, response);
     }
