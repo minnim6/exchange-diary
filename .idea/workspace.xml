@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1556ea7d-1f3b-4147-ad2a-dbee13ff23ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/jwt/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/jwt/JwtUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/controller/MemberControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/controller/MemberControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/resources/import.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs/asciidoc/member.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs/asciidoc/member.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/infrastructure/jwt/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/infrastructure/jwt/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/exchange/diary/controller/MemberControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exchange/diary/controller/MemberControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/exchange/diary/service/MemberServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exchange/diary/service/MemberServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/import.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/infrastructure/jwt/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/infrastructure/jwt/JwtFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +92,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
   </component>
-  <component name="RunManager" selected="Gradle.exchange-diary [build]">
+  <component name="RunManager" selected="Spring Boot.DiaryApplication">
     <configuration name="exchange-diary [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -221,7 +213,7 @@
       <workItem from="1642855154228" duration="13363000" />
       <workItem from="1643011449175" duration="21969000" />
       <workItem from="1643135619458" duration="2612000" />
-      <workItem from="1643194885706" duration="2689000" />
+      <workItem from="1643194885706" duration="3963000" />
     </task>
     <servers />
   </component>
