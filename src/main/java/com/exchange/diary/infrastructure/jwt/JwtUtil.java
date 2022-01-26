@@ -35,6 +35,7 @@ public class JwtUtil {
     }
 
     public Jwt.Response createJwt(Long memberNumber){
+        System.out.println(memberNumber);
         Jwt.ResponseAccessToken accessToken = createAccessToken(memberNumber);
         return Jwt.Response.builder()
                 .accessToken(accessToken.getAccessToken())

@@ -45,8 +45,6 @@ public class MemberServiceTest {
 
     JwtUtil jwtUtil = mock(JwtUtil.class);
 
-    TeamMemberRepository teamMemberRepository;
-
     MemberService memberService = new MemberService(memberRepository, teamRepository, diaryRepository, jwtUtil, passwordEncoder);
 
     Member member;
