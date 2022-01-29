@@ -110,7 +110,7 @@ public class JwtUtil {
     }
 
     private Long getMemberNumber(String token){
-        return (Long) paresClaims(token).get(AUTHORITIES_KEY);
+        return Long.parseLong((String) paresClaims(token).get(AUTHORITIES_KEY));
     }
 
     private boolean isCheckAuthorities(Claims claims) {

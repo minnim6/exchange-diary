@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1556ea7d-1f3b-4147-ad2a-dbee13ff23ad" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$RequestCreateTeam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$RequestCreateTeam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/controller/MemberControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/controller/MemberControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/service/MemberServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/service/MemberServiceTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/exchange/diary/service/MemberServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exchange/diary/service/MemberServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +105,7 @@
       <recent name="com.exchange.diary.infrastructure.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DiaryApplication">
+  <component name="RunManager" selected="JUnit.TeamServiceTest.createTeam">
     <configuration name="exchange-diary [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -171,17 +179,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MemberControllerTest.updateMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeamServiceTest.createTeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="diary.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.exchange.diary.controller.*" />
+          <option name="PATTERN" value="com.exchange.diary.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.exchange.diary.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.controller.MemberControllerTest" />
-      <option name="METHOD_NAME" value="updateMemberTest" />
+      <option name="PACKAGE_NAME" value="com.exchange.diary.service" />
+      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.service.TeamServiceTest" />
+      <option name="METHOD_NAME" value="createTeam" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -196,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TeamServiceTest.createTeam" />
         <item itemvalue="Gradle.exchange-diary [build]" />
         <item itemvalue="Gradle.exchange-diary [buildDependents]" />
         <item itemvalue="JUnit.MemberControllerTest" />
         <item itemvalue="JUnit.MemberControllerTest.getMember" />
-        <item itemvalue="JUnit.MemberControllerTest.updateMemberTest" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +228,7 @@
       <workItem from="1643135619458" duration="2612000" />
       <workItem from="1643194885706" duration="5014000" />
       <workItem from="1643263321878" duration="1203000" />
-      <workItem from="1643439595772" duration="5750000" />
+      <workItem from="1643439595772" duration="9297000" />
     </task>
     <servers />
   </component>

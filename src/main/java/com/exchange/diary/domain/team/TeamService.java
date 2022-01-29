@@ -26,10 +26,11 @@ public class TeamService {
 
     public Long createTeam(TeamDto.RequestCreateTeam requestCreateTeam){
         Member member = getMemberEntity();
-        Team team = teamRepository.save(Team.builder()
+        Team team = Team.builder()
                 .teamName(requestCreateTeam.teamName)
                 .memberAdmin(member)
-                .build());
+                .build();
+        team = teamRepository.save(team);
         saveTeamMember(member,team);
         return team.getTeamId();
     }

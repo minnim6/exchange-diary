@@ -67,7 +67,6 @@ public class MemberServiceTest {
         authorities.add(new SimpleGrantedAuthority("ROLE_MEMBER"));
         UserDetails userDetails = new User(String.valueOf(1L), "", authorities);
         SecurityContextHolder.getContext().setAuthentication(new UsernamePasswordAuthenticationToken(userDetails, "", authorities));
-
     }
 
     @DisplayName("회원가입 성공 테스트")
