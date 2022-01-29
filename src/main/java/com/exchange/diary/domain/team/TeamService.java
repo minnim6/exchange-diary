@@ -19,12 +19,13 @@ public class TeamService {
 
     private final TeamMemberRepository teamMemberRepository;
 
-    public void joinTeam(){
-
+    public void joinTeam(TeamDto.RequestJoinTeam requestJoinTeam){
+        Member member = getMemberEntity();
+        saveTeamMember(member,getTeamEntity(requestJoinTeam.teamId));
     }
 
     public Long createTeam(TeamDto.RequestCreateTeam requestCreateTeam){
-        Member member = getMember();
+        Member member = getMemberEntity();
         Team team = teamRepository.save(Team.builder()
                 .teamName(requestCreateTeam.teamName)
                 .memberAdmin(member)
@@ -44,11 +45,16 @@ public class TeamService {
                 .build());
     }
 
+    public Team getTeamEntity(Long teamId){
+        //TODO 에러처리
+        return teamRepository.findById(teamId).orElseThrow(NullPointerException::new);
+    }
+
     private Long getMemberNumber(){
         return Long.valueOf(SecurityContextHolder.getContext().getAuthentication().getName());
     }
 
-    private Member getMember(){
+    private Member getMemberEntity(){
         return memberRepository.findByMemberNumber(getMemberNumber());
     }
 
