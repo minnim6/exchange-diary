@@ -1,11 +1,13 @@
 package com.exchange.diary.domain.team;
 
 import com.exchange.diary.domain.member.Member;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 
 @Getter
@@ -27,4 +29,12 @@ public class Team {
 
     @OneToMany(mappedBy = "team")
     private List<TeamMember> memberList = new ArrayList<>();
+
+    @Builder
+    public Team(String teamName,Member memberAdmin){
+        this.teamName = teamName;
+        this.memberAdmin = memberAdmin;
+        this.teamLink = Base64.getEncoder().encodeToString(memberAdmin.getMemberNickname().getBytes());
+    }
+
 }
