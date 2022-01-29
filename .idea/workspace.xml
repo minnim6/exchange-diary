@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1556ea7d-1f3b-4147-ad2a-dbee13ff23ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/MemberController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +97,7 @@
       <recent name="com.exchange.diary.infrastructure.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.exchange-diary [build]">
+  <component name="RunManager" selected="Spring Boot.DiaryApplication">
     <configuration name="exchange-diary [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -219,7 +220,7 @@
       <workItem from="1643135619458" duration="2612000" />
       <workItem from="1643194885706" duration="5014000" />
       <workItem from="1643263321878" duration="1203000" />
-      <workItem from="1643439595772" duration="3118000" />
+      <workItem from="1643439595772" duration="4723000" />
     </task>
     <servers />
   </component>

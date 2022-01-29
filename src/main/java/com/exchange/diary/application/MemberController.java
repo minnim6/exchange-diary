@@ -20,7 +20,7 @@ public class MemberController {
         return memberService.loginMember(requestLogin);
     }
 
-    @PostMapping("/sign")
+    @PostMapping("/sign") //TODO login처리 처럼 리턴해주도록
     public void signMember(@RequestBody MemberDto.RequestSignup requestSignup){
         memberService.signupMember(requestSignup);
     }
