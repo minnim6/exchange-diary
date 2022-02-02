@@ -15,7 +15,7 @@ public class TeamController {
     private final TeamService teamService;
 
     @PostMapping
-    public Long createTeam(TeamDto.RequestCreateTeam requestCreateTeam){
-        return teamService.createTeam(requestCreateTeam);
+    public void createTeam(TeamDto.RequestCreateTeam requestCreateTeam){
+       // return teamService.createTeam(requestCreateTeam);
     }
 }

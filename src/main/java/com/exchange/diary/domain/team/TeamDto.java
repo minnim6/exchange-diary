@@ -20,17 +20,36 @@ public class TeamDto {
     @AllArgsConstructor
     @NoArgsConstructor
     @Getter
-    public static class RequestJoinTeam{
+    public static class RequestTeamId{
         Long teamId;
     }
 
     @AllArgsConstructor
     @Getter
-    public static class ResponseTeamInfo{
+    public static class ResponseJoin{
         Long teamId;
         String teamName;
         String teamAdminName;
-        List<String> memberList;
+
+        public ResponseJoin(Team team){
+            this.teamId = team.getTeamId();
+            this.teamName = team.getTeamName();
+            this.teamAdminName = team.getMemberAdmin().getMemberNickname();
+        }
+    }
+
+    @AllArgsConstructor
+    @Getter
+    public static class ResponseCreate{
+        Long teamId;
+        String teamName;
+        String teamAdminName;
+
+        public ResponseCreate(Team team){
+            this.teamId = team.getTeamId();
+            this.teamName = team.getTeamName();
+            this.teamAdminName = team.getMemberAdmin().getMemberNickname();
+        }
     }
 
 }

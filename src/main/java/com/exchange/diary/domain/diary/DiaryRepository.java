@@ -9,4 +9,5 @@ import java.util.Date;
 @Repository
 public interface DiaryRepository extends JpaRepository<Diary,Long> {
     int countAllByTeamAndDiaryDate(Team team, Date date);
+    void deleteAllByTeam(Team team);
 }

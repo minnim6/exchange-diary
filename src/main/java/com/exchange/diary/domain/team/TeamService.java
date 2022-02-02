@@ -1,6 +1,7 @@
 package com.exchange.diary.domain.team;
 
 
+import com.exchange.diary.domain.diary.DiaryRepository;
 import com.exchange.diary.domain.member.Member;
 import com.exchange.diary.domain.member.MemberRepository;
 import lombok.RequiredArgsConstructor;
@@ -19,24 +20,34 @@ public class TeamService {
 
     private final TeamMemberRepository teamMemberRepository;
 
-    public void joinTeam(TeamDto.RequestJoinTeam requestJoinTeam){
+    private final DiaryRepository diaryRepository;
+
+    public void joinTeam(TeamDto.RequestTeamId requestTeamId){
         Member member = getMemberEntity();
-        saveTeamMember(member,getTeamEntity(requestJoinTeam.teamId));
+        saveTeamMember(member,getTeamEntity(requestTeamId.teamId));
     }
 
-    public Long createTeam(TeamDto.RequestCreateTeam requestCreateTeam){
+    public TeamDto.ResponseJoin getJoinInfo(String teamLink){
+        return new TeamDto.ResponseJoin(teamRepository.findByTeamLink(teamLink));
+    }
+
+    public TeamDto.ResponseCreate createTeam(TeamDto.RequestCreateTeam requestCreateTeam){
         Member member = getMemberEntity();
-        Team team = Team.builder()
+        Team team = teamRepository.save(Team.builder()
                 .teamName(requestCreateTeam.teamName)
                 .memberAdmin(member)
-                .build();
-        team = teamRepository.save(team);
+                .build());
         saveTeamMember(member,team);
-        return team.getTeamId();
+        return new TeamDto.ResponseCreate(team);
     }
 
-    public void deleteTeam(){
-
+    public void deleteTeam(TeamDto.RequestTeamId requestTeamId){
+        Team team = getTeamEntity(requestTeamId.getTeamId());
+        if(isCheckTeamAdmin(team.getMemberAdmin().getMemberNumber())){
+            diaryRepository.deleteAllByTeam(team);
+            teamMemberRepository.deleteAllByTeam(team);
+            teamRepository.delete(team);
+        }
     }
 
     private void saveTeamMember(Member member,Team team){
@@ -49,6 +60,10 @@ public class TeamService {
     public Team getTeamEntity(Long teamId){
         //TODO 에러처리
         return teamRepository.findById(teamId).orElseThrow(NullPointerException::new);
+    }
+
+    private boolean isCheckTeamAdmin(Long memberNumber){
+        return memberNumber.equals(getMemberNumber());
     }
 
     private Long getMemberNumber(){
