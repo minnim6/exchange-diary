@@ -6,6 +6,7 @@ import com.exchange.diary.domain.team.TeamMember;
 import lombok.*;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @NoArgsConstructor
@@ -76,7 +77,7 @@ public class MemberDto {
     public static class ResponseInfo {
         private String memberId;
         private String memberNickname;
-        private Date memberJoinDate;
+        private LocalDate memberJoinDate;
 
         public ResponseInfo(Member member){
            this.memberId = member.getMemberId();

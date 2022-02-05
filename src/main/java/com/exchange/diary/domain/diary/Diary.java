@@ -5,16 +5,18 @@ import com.exchange.diary.domain.image.Image;
 import com.exchange.diary.domain.member.Member;
 import com.exchange.diary.domain.sticker.Sticker;
 import com.exchange.diary.domain.team.Team;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Getter
+@AllArgsConstructor
 @NoArgsConstructor
 @Entity
 public class Diary {
@@ -38,10 +40,9 @@ public class Diary {
 
     private String diaryContent;
 
-    @Temporal(value = TemporalType.DATE)
     @Column(insertable = true, updatable = false)
     @CreationTimestamp
-    private Date diaryDate;
+    private LocalDate diaryDate;
 
     @OneToMany(mappedBy = "diary")
     private List<Sticker> stickerList = new ArrayList<>();

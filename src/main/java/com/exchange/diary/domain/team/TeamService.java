@@ -9,6 +9,11 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 @RequiredArgsConstructor
 @Transactional
 @Service
@@ -22,23 +27,46 @@ public class TeamService {
 
     private final DiaryRepository diaryRepository;
 
-    public void joinTeam(TeamDto.RequestTeamId requestTeamId){
-        Member member = getMemberEntity();
-        saveTeamMember(member,getTeamEntity(requestTeamId.teamId));
+    public TeamDto.ResponseInfo getTeamInfo(TeamDto.RequestTeam requestTeam){
+        if(requestTeam.teamDate == null){
+            requestTeam.setTeamDate();
+        }
+        Team team = teamRepository.findByTeamId(requestTeam.getTeamId());
+        TeamDto.ResponseInfo responseInfo = new TeamDto.ResponseInfo(team);
+
+        responseInfo.setTodayMemberList(todayMember(team.getMemberList()));
+
+        if(isCheckTodayWritten(requestTeam.teamDate)){
+            //TODO 이미지 url 추가 해야함
+            responseInfo.changeCheckWroteMy();
+            return responseInfo;
+        }
+        return responseInfo;
     }
 
-    public TeamDto.ResponseJoin getJoinInfo(String teamLink){
-        return new TeamDto.ResponseJoin(teamRepository.findByTeamLink(teamLink));
+    private List<String> todayMember(List<TeamMember> memberList){
+        List<String> todayMember = new ArrayList<>();
+        for(TeamMember member:memberList){
+            if(diaryRepository.existsByMemberAndDiaryDate(member.getMember(),LocalDate.now())){
+                todayMember.add(member.getMember().getMemberNickname());
+            }
+        }
+        return todayMember;
     }
 
-    public TeamDto.ResponseCreate createTeam(TeamDto.RequestCreateTeam requestCreateTeam){
+    private boolean isCheckTodayWritten(LocalDate date){
+        return diaryRepository.existsByMemberAndDiaryDate(getMemberEntity(),date);
+    }
+
+    public TeamDto.ResponseLink createTeam(TeamDto.RequestCreateTeam requestCreateTeam){
         Member member = getMemberEntity();
         Team team = teamRepository.save(Team.builder()
                 .teamName(requestCreateTeam.teamName)
                 .memberAdmin(member)
                 .build());
+        team.createTeamLink();
         saveTeamMember(member,team);
-        return new TeamDto.ResponseCreate(team);
+        return new TeamDto.ResponseLink(team);
     }
 
     public void deleteTeam(TeamDto.RequestTeamId requestTeamId){

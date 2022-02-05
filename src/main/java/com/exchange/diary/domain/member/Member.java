@@ -2,17 +2,19 @@ package com.exchange.diary.domain.member;
 
 
 import com.exchange.diary.domain.team.TeamMember;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Getter
+@AllArgsConstructor
 @NoArgsConstructor
 @Entity
 public class Member {
@@ -27,10 +29,9 @@ public class Member {
 
     private String memberNickname;
 
-    @Temporal(value = TemporalType.DATE)
     @Column(insertable = true, updatable = false)
     @CreationTimestamp
-    private Date memberJoinDate;
+    private LocalDate memberJoinDate;
 
     @OneToMany(mappedBy = "member")
     private List<TeamMember> teamList = new ArrayList<>();

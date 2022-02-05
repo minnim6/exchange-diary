@@ -12,6 +12,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -57,7 +58,7 @@ public class MemberService {
     }
 
     private int findWroteTodayMemberNumber(Team team){
-        return diaryRepository.countAllByTeamAndDiaryDate(team,new Date());
+        return diaryRepository.countAllByTeamAndDiaryDate(team, LocalDate.now());
     }
 
     public void signupMember(MemberDto.RequestSignup requestSignup) {

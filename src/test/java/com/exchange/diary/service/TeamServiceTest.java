@@ -2,23 +2,30 @@ package com.exchange.diary.service;
 import static org.mockito.BDDMockito.willAnswer;
 import static org.mockito.Mockito.*;
 
+import com.exchange.diary.domain.diary.Diary;
 import com.exchange.diary.domain.diary.DiaryRepository;
+import com.exchange.diary.domain.image.BackgroundImage;
+import com.exchange.diary.domain.image.Image;
 import com.exchange.diary.domain.member.Member;
 import com.exchange.diary.domain.member.MemberRepository;
+import com.exchange.diary.domain.sticker.Sticker;
 import com.exchange.diary.domain.team.*;
 import com.exchange.diary.infrastructure.jwt.JwtUtil;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.mockito.Spy;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.test.util.ReflectionTestUtils;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Optional;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
@@ -39,6 +46,8 @@ public class TeamServiceTest {
 
     Team team;
 
+    LocalDate date = LocalDate.now();
+
     @BeforeEach
     public void setup(){
 
@@ -46,15 +55,13 @@ public class TeamServiceTest {
         String memberPassword = "password";
         String memberNickname = "nickname";
 
-        member = Member.builder()
-                .memberId(memberId)
-                .memberPassword(memberPassword)
-                .memberNickname(memberNickname)
-                .build();
-        team = Team.builder()
-                .teamName("newTeam")
-                .memberAdmin(member)
-                .build();
+        List<TeamMember> teamList = new ArrayList<>();
+
+        member = new Member(1L, "test", "pass", "nick", date,teamList);
+
+        List<TeamMember> memberList = new ArrayList<>();
+        memberList.add(new TeamMember(team,member));
+        team = new Team(1L,"testLink","teamName",member,memberList);
 
         Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
         authorities.add(new SimpleGrantedAuthority("ROLE_MEMBER"));
@@ -72,9 +79,9 @@ public class TeamServiceTest {
         given(teamRepository.save(any())).willReturn(team);
         given(teamMemberRepository.save(teamMember)).willReturn(teamMember);
         //when
-        TeamDto.ResponseCreate responseCreate = teamService.createTeam(requestCreateTeam);
+        TeamDto.ResponseLink responseLink = teamService.createTeam(requestCreateTeam);
         //then
-        assertThat(responseCreate.getTeamAdminName()).isEqualTo(member.getMemberNickname());
+        assertThat(responseLink.getTeamLink()).isNotNull();
     }
 
     @DisplayName("팀 삭제 테스트")
@@ -90,6 +97,23 @@ public class TeamServiceTest {
         verify(diaryRepository).deleteAllByTeam(team);
         verify(teamMemberRepository).deleteAllByTeam(team);
         verify(teamRepository).delete(team);
+    }
 
+    @DisplayName("팀 메인 가져오기 테스트")
+    @Test
+    public void getTeamInfoTest(){
+
+        List<Sticker> stickerList = new ArrayList<>();
+        Diary diary = new Diary(1L,team,member,new BackgroundImage(),new Image(),"content"
+        ,date,stickerList);
+        TeamDto.RequestTeam requestTeam = new TeamDto.RequestTeam(1L,date);
+        given(teamRepository.findByTeamId(1L)).willReturn(team);
+        given(memberRepository.findByMemberNumber(1L)).willReturn(member);
+        given(diaryRepository.existsByMemberAndDiaryDate(member,date)).willReturn(true);
+        given(diaryRepository.countAllByTeamAndDiaryDate(team,date)).willReturn(1);
+        TeamDto.ResponseInfo responseInfo = teamService.getTeamInfo(requestTeam);
+
+        assertThat(responseInfo.getTodayMemberList().size()).isEqualTo(1);
+        assertThat(responseInfo.getCheckWroteMy()).isEqualTo(TeamDto.ResponseInfo.CheckWroteMy.Y);
     }
 }

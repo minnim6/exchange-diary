@@ -1,6 +1,7 @@
 package com.exchange.diary.domain.team;
 
 import com.exchange.diary.domain.member.Member;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,6 +12,7 @@ import java.util.Base64;
 import java.util.List;
 
 @Getter
+@AllArgsConstructor
 @NoArgsConstructor
 @Entity
 public class Team {
@@ -34,7 +36,12 @@ public class Team {
     public Team(String teamName,Member memberAdmin){
         this.teamName = teamName;
         this.memberAdmin = memberAdmin;
-        this.teamLink = Base64.getEncoder().encodeToString(memberAdmin.getMemberNickname().getBytes());
     }
+
+    public void createTeamLink(){
+        this.teamLink = Base64.getEncoder().encodeToString(memberAdmin.getMemberNickname().getBytes()
+        )+teamName;
+    }
+
 
 }
