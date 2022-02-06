@@ -13,17 +13,17 @@ public class TeamController {
     private final TeamService teamService;
 
     @PostMapping
-    public TeamDto.ResponseLink createTeam(TeamDto.RequestCreateTeam requestCreateTeam){
+    public TeamDto.ResponseLink createTeam(@RequestBody TeamDto.RequestCreateTeam requestCreateTeam){
         return teamService.createTeam(requestCreateTeam);
     }
 
     @DeleteMapping
-    public void deleteTeam(TeamDto.RequestTeamId requestTeamId){
+    public void deleteTeam(@RequestBody TeamDto.RequestTeamId requestTeamId){
         teamService.deleteTeam(requestTeamId);
     }
 
     @GetMapping
-    public TeamDto.ResponseInfo getTeamInfo(TeamDto.RequestTeam requestTeam){
+    public TeamDto.ResponseInfo getTeamInfo(@RequestBody TeamDto.RequestTeam requestTeam){
         return teamService.getTeamInfo(requestTeam);
     }
 }
