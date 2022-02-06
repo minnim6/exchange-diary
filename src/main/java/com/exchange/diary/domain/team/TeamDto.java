@@ -3,6 +3,7 @@ package com.exchange.diary.domain.team;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;
 import java.util.Date;
@@ -25,7 +26,7 @@ public class TeamDto {
     @Getter
     public static class RequestTeam{
         Long teamId;
-        //@DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) -> json to date 에러시 사용 , LocalDateTime
+        @DateTimeFormat(pattern = "yyyy-MM-dd") //-> json to date 에러시 사용 , LocalDateTime
         LocalDate teamDate;
 
         public void setTeamDate(){

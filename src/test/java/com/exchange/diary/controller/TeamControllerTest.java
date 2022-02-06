@@ -20,6 +20,7 @@ import org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders;
 import org.springframework.restdocs.payload.JsonFieldType;
 import org.springframework.test.web.servlet.MockMvc;
 
+import java.time.LocalDate;
 import java.util.*;
 
 import static org.mockito.ArgumentMatchers.any;
@@ -85,7 +86,7 @@ public class TeamControllerTest {
     public void deleteTeam()throws Exception{
         Map<String, Object> requestJson = new HashMap<>();
 
-        requestJson.put("teamId","삭제할 고유 id");
+        requestJson.put("teamId",1);
 
         mockMvc.perform(RestDocumentationRequestBuilders.delete("/team")
                         .header("Authorization", "accessToken")
@@ -100,7 +101,7 @@ public class TeamControllerTest {
                                 .removePort(),prettyPrint()),
                         preprocessResponse(prettyPrint()),
                         requestFields(
-                                fieldWithPath("teamId").type(JsonFieldType.STRING).description("삭제할 팀의 고유 id")
+                                fieldWithPath("teamId").type(JsonFieldType.NUMBER).description("삭제할 팀의 고유 id")
                         )
                 ));
     }
@@ -119,8 +120,8 @@ public class TeamControllerTest {
 
         Map<String, Object> requestJson = new HashMap<>();
 
-        requestJson.put("teamId","팀의 고유 id");
-        requestJson.put("teamDate","가져올 팀메인의 날짜");
+        requestJson.put("teamId",1);
+        requestJson.put("teamDate", "2020-04-30");
 
         mockMvc.perform(RestDocumentationRequestBuilders.get("/team")
                         .header("Authorization", "accessToken")
@@ -135,7 +136,7 @@ public class TeamControllerTest {
                                 .removePort(),prettyPrint()),
                         preprocessResponse(prettyPrint()),
                         requestFields(
-                                fieldWithPath("teamId").type(JsonFieldType.STRING).description("팀의 고유 id"),
+                                fieldWithPath("teamId").type(JsonFieldType.NUMBER).description("팀의 고유 id"),
                                 fieldWithPath("teamDate").type(JsonFieldType.STRING).description("가져올 날짜")
                         ),
                         responseFields(
