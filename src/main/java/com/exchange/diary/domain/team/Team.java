@@ -25,7 +25,7 @@ public class Team {
 
     private String teamName;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "member_number")
     private Member memberAdmin;
 

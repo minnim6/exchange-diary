@@ -26,6 +26,7 @@ import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.security.test.context.support.WithSecurityContextFactory;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -57,11 +58,10 @@ public class MemberServiceTest {
         String memberPassword = passwordEncoder.encode("password");
         String memberNickname = "nickname";
 
-        member = Member.builder()
-                .memberId(memberId)
-                .memberPassword(memberPassword)
-                .memberNickname(memberNickname)
-                .build();
+        List<TeamMember> teamList = new ArrayList<>();
+        Team team = new Team(1L,"testLink","testName",member,teamList);
+        teamList.add(new TeamMember(team,member));
+        member = new Member(1L,memberId,memberPassword,memberNickname, LocalDate.now(),teamList);
 
         Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
         authorities.add(new SimpleGrantedAuthority("ROLE_MEMBER"));
@@ -126,4 +126,15 @@ public class MemberServiceTest {
         //then
         assertThat(responseInfo.getMemberNickname()).isEqualTo(changeMemberNickname);
     }
+
+    @DisplayName("회원이 속한 모든팀 가져오기 테스트")
+    @Test
+    public void findByAllMyTeamTest(){
+        //given
+        given(memberRepository.findByMemberNumber(1L)).willReturn(member);
+        //when
+
+        //then
+    }
+
 }

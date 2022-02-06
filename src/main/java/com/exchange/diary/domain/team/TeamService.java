@@ -72,11 +72,14 @@ public class TeamService {
     public void deleteTeam(TeamDto.RequestTeamId requestTeamId){
         Team team = getTeamEntity(requestTeamId.getTeamId());
         if(isCheckTeamAdmin(team.getMemberAdmin().getMemberNumber())){
-            diaryRepository.deleteAllByTeam(team);
-            teamMemberRepository.deleteAllByTeam(team);
-            teamRepository.delete(team);
+            if(diaryRepository.existsByTeam(team)) {
+                diaryRepository.deleteAllByTeam(team);
+                teamMemberRepository.deleteAllByTeam(team);
+                teamRepository.delete(team);
+            }
         }
     }
+
 
     private void saveTeamMember(Member member,Team team){
         teamMemberRepository.save(TeamMember.builder()

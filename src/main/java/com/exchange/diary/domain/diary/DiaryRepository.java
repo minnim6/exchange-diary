@@ -13,4 +13,5 @@ public interface DiaryRepository extends JpaRepository<Diary,Long> {
     int countAllByTeamAndDiaryDate(Team team, LocalDate date);
     void deleteAllByTeam(Team team);
     boolean existsByMemberAndDiaryDate(Member member, LocalDate date);
+    boolean existsByTeam(Team team);
 }
