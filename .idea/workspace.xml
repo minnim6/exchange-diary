@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1556ea7d-1f3b-4147-ad2a-dbee13ff23ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/diary/DiaryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/diary/DiaryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/exchange/diary/service/MemberServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exchange/diary/service/MemberServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/exchange/diary/integration/TeamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exchange/diary/integration/TeamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/exchange/diary/service/TeamServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exchange/diary/service/TeamServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,59 +101,7 @@
       <recent name="com.exchange.diary.infrastructure.config" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TeamControllerTest.createTeamTest">
-    <configuration name="exchange-diary [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="DiaryApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="diary.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.exchange.diary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.exchange.diary" />
-      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.DiaryApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TeamControllerTest.createTeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="diary.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.exchange.diary.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.exchange.diary.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.controller.TeamControllerTest" />
-      <option name="METHOD_NAME" value="createTeamTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TeamTest.createTeamTest">
     <configuration name="TeamServiceTest.createTeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="diary.test" />
       <extension name="coverage">
@@ -162,6 +112,54 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.exchange.diary.service" />
       <option name="MAIN_CLASS_NAME" value="com.exchange.diary.service.TeamServiceTest" />
+      <option name="METHOD_NAME" value="createTeamTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeamServiceTest.deleteTeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diary.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exchange.diary.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exchange.diary.service" />
+      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.service.TeamServiceTest" />
+      <option name="METHOD_NAME" value="deleteTeamTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeamServiceTest.getTeamInfoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diary.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exchange.diary.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exchange.diary.service" />
+      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.service.TeamServiceTest" />
+      <option name="METHOD_NAME" value="getTeamInfoTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeamTest.createTeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diary.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exchange.diary.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exchange.diary.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.integration.TeamTest" />
       <option name="METHOD_NAME" value="createTeamTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -191,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TeamControllerTest.createTeamTest" />
-        <item itemvalue="Gradle.exchange-diary [build]" />
-        <item itemvalue="JUnit.DiaryApplicationTests" />
+        <item itemvalue="JUnit.TeamTest.createTeamTest" />
+        <item itemvalue="JUnit.TeamServiceTest.deleteTeamTest" />
         <item itemvalue="JUnit.com.exchange.diary in diary.test" />
         <item itemvalue="JUnit.TeamServiceTest.createTeamTest" />
+        <item itemvalue="JUnit.TeamServiceTest.getTeamInfoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +223,7 @@
       <workItem from="1643942302269" duration="1888000" />
       <workItem from="1643968422513" duration="7164000" />
       <workItem from="1644047475074" duration="6423000" />
-      <workItem from="1644061859779" duration="4429000" />
+      <workItem from="1644061859779" duration="8902000" />
     </task>
     <servers />
   </component>

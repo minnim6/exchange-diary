@@ -91,6 +91,7 @@ public class TeamServiceTest {
         TeamDto.RequestTeamId requestTeamId = new TeamDto.RequestTeamId(1L);
         Optional<Team> optionalTeam = Optional.ofNullable(team);
         given(teamRepository.findById(1L)).willReturn(optionalTeam);
+        given(diaryRepository.existsByTeam(team)).willReturn(true);
         //when
         teamService.deleteTeam(requestTeamId);
         //then

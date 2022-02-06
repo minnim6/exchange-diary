@@ -60,11 +60,12 @@ public class TeamService {
 
     public TeamDto.ResponseLink createTeam(TeamDto.RequestCreateTeam requestCreateTeam){
         Member member = getMemberEntity();
-        Team team = teamRepository.save(Team.builder()
+        Team team = Team.builder()
                 .teamName(requestCreateTeam.teamName)
                 .memberAdmin(member)
-                .build());
+                .build();
         team.createTeamLink();
+        teamRepository.save(team);
         saveTeamMember(member,team);
         return new TeamDto.ResponseLink(team);
     }
@@ -74,9 +75,9 @@ public class TeamService {
         if(isCheckTeamAdmin(team.getMemberAdmin().getMemberNumber())){
             if(diaryRepository.existsByTeam(team)) {
                 diaryRepository.deleteAllByTeam(team);
-                teamMemberRepository.deleteAllByTeam(team);
-                teamRepository.delete(team);
             }
+            teamMemberRepository.deleteAllByTeam(team);
+            teamRepository.delete(team);
         }
     }
 
