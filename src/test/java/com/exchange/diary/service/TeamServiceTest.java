@@ -92,7 +92,7 @@ public class TeamServiceTest {
         given(teamRepository.findById(1L)).willReturn(optionalTeam);
         given(diaryRepository.existsByTeam(team)).willReturn(true);
         //when
-        teamService.deleteTeam(new TeamDto.RequestTeamId());
+        teamService.deleteTeam(requestTeamId);
         //then
         verify(diaryRepository).deleteAllByTeam(team);
         verify(teamMemberRepository).deleteAllByTeam(team);
