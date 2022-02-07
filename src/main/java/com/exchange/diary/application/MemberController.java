@@ -31,7 +31,7 @@ public class MemberController {
     }
 
     @PatchMapping
-    public MemberDto.ResponseInfo updateMember(MemberDto.RequestUpdate requestUpdate){
+    public MemberDto.ResponseInfo updateMember(@RequestBody MemberDto.RequestUpdate requestUpdate){
         return memberService.updateMember(requestUpdate);
     }
 

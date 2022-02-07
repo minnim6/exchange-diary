@@ -73,13 +73,12 @@ public class TeamServiceTest {
     @Test
     public void createTeamTest(){
         //given
-        TeamDto.RequestCreateTeam requestCreateTeam = new TeamDto.RequestCreateTeam("newTeam");
         TeamMember teamMember = new TeamMember(team,member);
         given(memberRepository.findByMemberNumber(1L)).willReturn(member);
         given(teamRepository.save(any())).willReturn(team);
         given(teamMemberRepository.save(teamMember)).willReturn(teamMember);
         //when
-        TeamDto.ResponseLink responseLink = teamService.createTeam(requestCreateTeam);
+        TeamDto.ResponseLink responseLink = teamService.createTeam(new TeamDto.RequestCreateTeam());
         //then
         assertThat(responseLink.getTeamLink()).isNotNull();
     }
@@ -93,7 +92,7 @@ public class TeamServiceTest {
         given(teamRepository.findById(1L)).willReturn(optionalTeam);
         given(diaryRepository.existsByTeam(team)).willReturn(true);
         //when
-        teamService.deleteTeam(requestTeamId);
+        teamService.deleteTeam(new TeamDto.RequestTeamId());
         //then
         verify(diaryRepository).deleteAllByTeam(team);
         verify(teamMemberRepository).deleteAllByTeam(team);

@@ -18,6 +18,8 @@ import org.springframework.http.MediaType;
 import static io.restassured.RestAssured.given;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class TeamTest {
@@ -42,11 +44,15 @@ public class TeamTest {
     @DisplayName("팀 생성 테스트")
     @Test
     public void createTeamTest() throws JsonProcessingException {
-        TeamDto.RequestCreateTeam team = new TeamDto.RequestCreateTeam("newTeam");
+
+        Map<String, Object> requestJson = new HashMap<>();
+
+        requestJson.put("teamName","생성할 팀이름 지정");
+
         given().accept(MediaType.APPLICATION_JSON_VALUE)
                 .contentType(ContentType.JSON)
                 .header("Authorization",token)
-                .body(objectMapper.writeValueAsString(team)).log().all()
+                .body(objectMapper.writeValueAsString(requestJson)).log().all()
                 .when().post("/team")
                 .then().statusCode(HttpStatus.OK.value());
     }

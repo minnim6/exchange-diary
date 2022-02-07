@@ -14,7 +14,6 @@ import java.util.stream.Collectors;
 @Getter
 public class TeamDto {
 
-    @AllArgsConstructor
     @NoArgsConstructor
     @Getter
     public static class RequestCreateTeam{
@@ -51,6 +50,7 @@ public class TeamDto {
        }
     }
 
+    @NoArgsConstructor
     @AllArgsConstructor
     @Getter
     public static class ResponseInfo{
