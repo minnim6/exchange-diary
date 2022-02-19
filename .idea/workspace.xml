@@ -5,31 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1556ea7d-1f3b-4147-ad2a-dbee13ff23ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/integrationTest/api.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/JwtController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/JwtController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/TeamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/TeamController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/Team.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$RequestTeam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$RequestTeam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$RequestTeamId.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$RequestTeamId.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseInfo$CheckWroteMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseInfo$CheckWroteMy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseLink.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseLink.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/jwt/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/jwt/JwtUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/api.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/controller/TeamControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/controller/TeamControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/service/TeamServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/service/TeamServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/JwtController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/JwtController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/TeamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/infrastructure/jwt/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/infrastructure/jwt/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/asciidoc/api.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs/asciidoc/api.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/api.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/exchange/diary/controller/TeamControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exchange/diary/controller/TeamControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/exchange/diary/service/TeamServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exchange/diary/service/TeamServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,8 +185,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.exchange-diary [build]" />
-        <item itemvalue="JUnit.TeamControllerTest.updateTeam" />
         <item itemvalue="JUnit.TeamControllerTest.joinTeam" />
+        <item itemvalue="JUnit.TeamControllerTest.updateTeam" />
         <item itemvalue="JUnit.TeamServiceTest.joinTeamTest" />
         <item itemvalue="HTTP Request.api | #6" />
       </list>

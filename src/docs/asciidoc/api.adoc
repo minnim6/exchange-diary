@@ -125,3 +125,32 @@ response-body
 include::build/generated-snippets/team/info/response-body.adoc[]
 response-fields
 include::build/generated-snippets/team/info/response-fields.adoc[]
+
+== team join
+curl
+include::build/generated-snippets/team/join/curl-request.adoc[]
+http-request
+include::build/generated-snippets/team/join/http-request.adoc[]
+http-response
+include::build/generated-snippets/team/join/http-response.adoc[]
+httpie-request
+include::build/generated-snippets/team/join/httpie-request.adoc[]
+request-body
+include::build/generated-snippets/team/join/request-body.adoc[]
+response-body
+include::build/generated-snippets/team/join/response-body.adoc[]
+== team update
+curl
+include::build/generated-snippets/team/update/curl-request.adoc[]
+http-request
+include::build/generated-snippets/team/update/http-request.adoc[]
+http-response
+include::build/generated-snippets/team/update/http-response.adoc[]
+httpie-request
+include::build/generated-snippets/team/update/httpie-request.adoc[]
+request-body
+include::build/generated-snippets/team/update/request-body.adoc[]
+request-fields
+include::build/generated-snippets/team/update/request-fields.adoc[]
+response-body
+include::build/generated-snippets/team/update/response-body.adoc[]

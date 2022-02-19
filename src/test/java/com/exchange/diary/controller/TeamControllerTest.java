@@ -154,7 +154,7 @@ public class TeamControllerTest {
     @Test
     public void joinTeam() throws Exception {
 
-        mockMvc.perform(RestDocumentationRequestBuilders.post("/team/고유링크")
+        mockMvc.perform(RestDocumentationRequestBuilders.post("/team/teamLink")
                         .header("Authorization", "accessToken"))
                 .andExpect(status().isOk())
                 .andDo(document("team/join",
