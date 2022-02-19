@@ -116,4 +116,21 @@ public class TeamServiceTest {
         assertThat(responseInfo.getTodayMemberList().size()).isEqualTo(1);
         assertThat(responseInfo.getCheckWroteMy()).isEqualTo(TeamDto.ResponseInfo.CheckWroteMy.Y);
     }
+
+    @DisplayName("팀 가입하기 테스트")
+    @Test
+    public void joinTeamTest(){
+        //given
+        List<TeamMember> teamList = new ArrayList<>();
+        Member joinMember = new Member(2L, "joinTest", "pass", "nick", date,teamList);
+        Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
+        authorities.add(new SimpleGrantedAuthority("ROLE_MEMBER"));
+        UserDetails userDetails = new User(String.valueOf(2L), "", authorities);
+        SecurityContextHolder.getContext().setAuthentication(new UsernamePasswordAuthenticationToken(userDetails, "", authorities));
+        given(teamRepository.findByTeamLink("link")).willReturn(team);
+        //when
+        teamService.joinTeam("link");
+        //then
+
+    }
 }

@@ -149,4 +149,50 @@ public class TeamControllerTest {
 
     }
 
+
+    @DisplayName("팀 가입하기")
+    @Test
+    public void joinTeam() throws Exception {
+
+        mockMvc.perform(RestDocumentationRequestBuilders.post("/team/고유링크")
+                        .header("Authorization", "accessToken"))
+                .andExpect(status().isOk())
+                .andDo(document("team/join",
+                        preprocessRequest( modifyUris()
+                                .scheme("http")
+                                .host("jeom.shop")
+                                .removePort(),prettyPrint())
+                ));
+
+    }
+
+
+    @DisplayName("팀이름 바꾸기")
+    @Test
+    public void updateTeam() throws Exception {
+
+        Map<String, Object> requestJson = new HashMap<>();
+
+        requestJson.put("teamId",1);
+        requestJson.put("teamName", "변경할 팀네임");
+
+        mockMvc.perform(RestDocumentationRequestBuilders.patch("/team")
+                        .header("Authorization", "accessToken")
+                        .content(objectMapper.writeValueAsString(requestJson))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andDo(document("team/update",
+                        preprocessRequest( modifyUris()
+                                .scheme("http")
+                                .host("jeom.shop")
+                                .removePort(),prettyPrint()),
+                        preprocessResponse(prettyPrint()),
+                        requestFields(
+                                fieldWithPath("teamId").type(JsonFieldType.NUMBER).description("팀의 고유 id"),
+                                fieldWithPath("teamName").type(JsonFieldType.STRING).description("변경할 팀닉네임")
+                        )
+                ));
+
+    }
 }

@@ -625,7 +625,7 @@ Content-Length: 131
 {
   "accessToken" : "accessToken",
   "refreshToken" : "refreshToken",
-  "accessTokenExpireTime" : "2022-02-05T08:27:10.874+00:00"
+  "accessTokenExpireTime" : "2022-02-06T11:11:49.576+00:00"
 }</code></pre>
 </div>
 </div>
@@ -661,7 +661,7 @@ Content-Length: 131
 <pre class="highlight nowrap"><code>{
   "accessToken" : "accessToken",
   "refreshToken" : "refreshToken",
-  "accessTokenExpireTime" : "2022-02-05T08:27:10.874+00:00"
+  "accessTokenExpireTime" : "2022-02-06T11:11:49.576+00:00"
 }</code></pre>
 </div>
 </div>
@@ -800,7 +800,7 @@ Content-Length: 87
 {
   "memberId" : "id",
   "memberNickname" : "pass",
-  "memberJoinDate" : "2022-02-05"
+  "memberJoinDate" : "2022-02-06"
 }</code></pre>
 </div>
 </div>
@@ -835,7 +835,7 @@ Content-Length: 87
 <pre class="highlight nowrap"><code>{
   "memberId" : "id",
   "memberNickname" : "pass",
-  "memberJoinDate" : "2022-02-05"
+  "memberJoinDate" : "2022-02-06"
 }</code></pre>
 </div>
 </div>
@@ -939,7 +939,7 @@ Content-Length: 87
 {
   "memberId" : "id",
   "memberNickname" : "pass",
-  "memberJoinDate" : "2022-02-05"
+  "memberJoinDate" : "2022-02-06"
 }</code></pre>
 </div>
 </div>
@@ -960,7 +960,7 @@ Content-Length: 87
 <pre class="highlight nowrap"><code>{
   "memberId" : "id",
   "memberNickname" : "pass",
-  "memberJoinDate" : "2022-02-05"
+  "memberJoinDate" : "2022-02-06"
 }</code></pre>
 </div>
 </div>
@@ -1116,7 +1116,7 @@ Content-Length: 43
     -H 'Authorization: accessToken' \
     -H 'Accept: application/json' \
     -d '{
-  "teamId" : "삭제할 고유 id"
+  "teamId" : 1
 }'</code></pre>
 </div>
 </div>
@@ -1129,11 +1129,11 @@ Content-Length: 43
 Content-Type: application/json;charset=UTF-8
 Authorization: accessToken
 Accept: application/json
-Content-Length: 38
+Content-Length: 18
 Host: jeom.shop
 
 {
-  "teamId" : "삭제할 고유 id"
+  "teamId" : 1
 }</code></pre>
 </div>
 </div>
@@ -1157,7 +1157,7 @@ X-Frame-Options: DENY</code></pre>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-bash" data-lang="bash">$ echo '{
-  "teamId" : "삭제할 고유 id"
+  "teamId" : 1
 }' | http DELETE 'http://jeom.shop/team' \
     'Content-Type:application/json;charset=UTF-8' \
     'Authorization:accessToken' \
@@ -1170,7 +1170,7 @@ X-Frame-Options: DENY</code></pre>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight nowrap"><code>{
-  "teamId" : "삭제할 고유 id"
+  "teamId" : 1
 }</code></pre>
 </div>
 </div>
@@ -1193,7 +1193,7 @@ X-Frame-Options: DENY</code></pre>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>teamId</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>String</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Number</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">삭제할 팀의 고유 id</p></td>
 </tr>
 </tbody>
@@ -1221,8 +1221,8 @@ X-Frame-Options: DENY</code></pre>
     -H 'Authorization: accessToken' \
     -H 'Accept: application/json' \
     -d '{
-  "teamId" : "팀의 고유 id",
-  "teamDate" : "가져올 팀메인의 날짜"
+  "teamId" : 1,
+  "teamDate" : "2020-04-30"
 }'</code></pre>
 </div>
 </div>
@@ -1235,12 +1235,12 @@ X-Frame-Options: DENY</code></pre>
 Content-Type: application/json;charset=UTF-8
 Authorization: accessToken
 Accept: application/json
-Content-Length: 83
+Content-Length: 47
 Host: jeom.shop
 
 {
-  "teamId" : "팀의 고유 id",
-  "teamDate" : "가져올 팀메인의 날짜"
+  "teamId" : 1,
+  "teamDate" : "2020-04-30"
 }</code></pre>
 </div>
 </div>
@@ -1273,8 +1273,8 @@ Content-Length: 128
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-bash" data-lang="bash">$ echo '{
-  "teamId" : "팀의 고유 id",
-  "teamDate" : "가져올 팀메인의 날짜"
+  "teamId" : 1,
+  "teamDate" : "2020-04-30"
 }' | http GET 'http://jeom.shop/team' \
     'Content-Type:application/json;charset=UTF-8' \
     'Authorization:accessToken' \
@@ -1287,8 +1287,8 @@ Content-Length: 128
 <div class="listingblock">
 <div class="content">
 <pre class="highlight nowrap"><code>{
-  "teamId" : "팀의 고유 id",
-  "teamDate" : "가져올 팀메인의 날짜"
+  "teamId" : 1,
+  "teamDate" : "2020-04-30"
 }</code></pre>
 </div>
 </div>
@@ -1311,7 +1311,7 @@ Content-Length: 128
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>teamId</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>String</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Number</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">팀의 고유 id</p></td>
 </tr>
 <tr>

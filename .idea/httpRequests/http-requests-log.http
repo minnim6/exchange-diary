@@ -1,0 +1,423 @@
+GET http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzOCIsImV4cCI6MTY0NTI1OTE1Mn0.8qBCcjQEnEDuYW21lUCK2if_SD5Ovb-yNAidPbhITIs
+
+{
+  "teamId": 4,
+  "teamDate": "2022-01-22"
+}
+
+<> 2022-02-19T165701.200.json
+
+###
+
+GET http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIyMSIsImV4cCI6MTY0NTI1NjE0NX0.hqASwW67LfPqyplGd6hNQQYnNCxPpGvJ_u0boxhDGZM
+
+{
+  "teamId": 4,
+  "teamDate": "2022-01-22"
+}
+
+<> 2022-02-19T165650.500.json
+
+###
+
+POST http://localhost:8080/team/bmlja25hbWU=teamTest
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzOCIsImV4cCI6MTY0NTI1OTE1Mn0.8qBCcjQEnEDuYW21lUCK2if_SD5Ovb-yNAidPbhITIs
+
+###
+
+POST http://localhost:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId": "test1",
+  "memberPassword": "pass"
+}
+
+<> 2022-02-19T165552.200.json
+
+###
+
+POST http://localhost:8080/member/sign
+Content-Type: application/json
+
+{
+  "memberId": "test1",
+  "memberNickname": "nickname",
+  "memberPassword": "pass"
+}
+
+###
+
+POST http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNyIsImV4cCI6MTY0NTI1OTA1M30.BlVtldxF8VsIVhMkFAqhmznGagZaS4_tKZPjtdpYfdc
+
+{
+  "teamName": "teamTest"
+}
+
+<> 2022-02-19T165530.200.json
+
+###
+
+POST http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIyMSIsImV4cCI6MTY0NTI1NjE0NX0.hqASwW67LfPqyplGd6hNQQYnNCxPpGvJ_u0boxhDGZM
+
+{
+  "teamName": "teamTest"
+}
+
+<> 2022-02-19T165508.500.json
+
+###
+
+POST http://localhost:8080/team/66+47JeYtest
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNyIsImV4cCI6MTY0NTI1OTA1M30.BlVtldxF8VsIVhMkFAqhmznGagZaS4_tKZPjtdpYfdc
+
+<> 2022-02-19T165427.500.json
+
+###
+
+POST http://localhost:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId": "test",
+  "memberPassword": "pass"
+}
+
+<> 2022-02-19T165414.200.json
+
+###
+
+POST http://localhost:8080/member/sign
+Content-Type: application/json
+
+{
+  "memberId": "test",
+  "memberNickname": "nickname",
+  "memberPassword": "pass"
+}
+
+<> 2022-02-19T165407.500.json
+
+###
+
+POST http://localhost:8080/team/66+47JeYtest
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNyIsImV4cCI6MTY0NTI1ODMxNn0.5qyYHyNY1QsO9kgMGIX_lPP304dAyOaJ1-gYXwhKBsk
+
+<> 2022-02-19T165333.500.json
+
+###
+
+POST http://localhost:8080/team/66+47JeYmieddddd1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNyIsImV4cCI6MTY0NTI1ODMxNn0.5qyYHyNY1QsO9kgMGIX_lPP304dAyOaJ1-gYXwhKBsk
+
+###
+
+POST http://localhost:8080/team/link
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNyIsImV4cCI6MTY0NTI1ODMxNn0.5qyYHyNY1QsO9kgMGIX_lPP304dAyOaJ1-gYXwhKBsk
+
+###
+
+POST http://localhost:8080/team/66+47JeYtest
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNyIsImV4cCI6MTY0NTI1ODMxNn0.5qyYHyNY1QsO9kgMGIX_lPP304dAyOaJ1-gYXwhKBsk
+
+<> 2022-02-19T165113.500.json
+
+###
+
+POST http://localhost:8080/team/link
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNyIsImV4cCI6MTY0NTI1ODMxNn0.5qyYHyNY1QsO9kgMGIX_lPP304dAyOaJ1-gYXwhKBsk
+
+<> 2022-02-19T165022.404.json
+
+###
+
+POST http://localhost:8080/team/66+47JeYtest
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNyIsImV4cCI6MTY0NTI1ODMxNn0.5qyYHyNY1QsO9kgMGIX_lPP304dAyOaJ1-gYXwhKBsk
+
+<> 2022-02-19T164823.404.json
+
+###
+
+GET http://localhost:8080/team/66+47JeYtest
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNyIsImV4cCI6MTY0NTI1ODMxNn0.5qyYHyNY1QsO9kgMGIX_lPP304dAyOaJ1-gYXwhKBsk
+
+<> 2022-02-19T164701.404.json
+
+###
+
+POST http://localhost:8080/team/66+47JeYtest
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNyIsImV4cCI6MTY0NTI1ODMxNn0.5qyYHyNY1QsO9kgMGIX_lPP304dAyOaJ1-gYXwhKBsk
+
+<> 2022-02-19T164455.404.json
+
+###
+
+POST http://localhost:8080/team/{{66+47JeYtest}}
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNyIsImV4cCI6MTY0NTI1ODMxNn0.5qyYHyNY1QsO9kgMGIX_lPP304dAyOaJ1-gYXwhKBsk
+
+###
+
+POST http://localhost:8080/team/{{66+47JeYtest}}
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNyIsImV4cCI6MTY0NTI1ODMxNn0.5qyYHyNY1QsO9kgMGIX_lPP304dAyOaJ1-gYXwhKBsk
+
+###
+
+POST http://localhost:8080/team/{66+47JeYtest}
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNyIsImV4cCI6MTY0NTI1ODMxNn0.5qyYHyNY1QsO9kgMGIX_lPP304dAyOaJ1-gYXwhKBsk
+
+###
+
+POST http://localhost:8080/team/{66+47JeYtest}
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNyIsImV4cCI6MTY0NTI1ODMxNn0.5qyYHyNY1QsO9kgMGIX_lPP304dAyOaJ1-gYXwhKBsk
+
+###
+
+POST http://localhost:8080/team/{66+47JeYtest}
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNyIsImV4cCI6MTY0NTI1ODMxNn0.5qyYHyNY1QsO9kgMGIX_lPP304dAyOaJ1-gYXwhKBsk
+
+###
+
+POST http://localhost:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId": "test",
+  "memberPassword": "pass"
+}
+
+<> 2022-02-19T164156.200.json
+
+###
+
+POST http://localhost:8080/member/sign
+Content-Type: application/json
+
+{
+  "memberId": "test",
+  "memberNickname": "nickname",
+  "memberPassword": "pass"
+}
+
+###
+
+GET http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIyMSIsImV4cCI6MTY0NTI1NjE0NX0.hqASwW67LfPqyplGd6hNQQYnNCxPpGvJ_u0boxhDGZM
+
+{
+  "teamId": 4,
+  "teamDate": "2022-01-22"
+}
+
+<> 2022-02-19T162113.200.json
+
+###
+
+DELETE http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIyMSIsImV4cCI6MTY0NTI1NjE0NX0.hqASwW67LfPqyplGd6hNQQYnNCxPpGvJ_u0boxhDGZM
+
+{
+  "teamId": 7
+}
+
+###
+
+DELETE http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIyMSIsImV4cCI6MTY0NTI1NjE0NX0.hqASwW67LfPqyplGd6hNQQYnNCxPpGvJ_u0boxhDGZM
+
+{
+  "teamId": 6
+}
+
+<> 2022-02-19T161804.500.json
+
+###
+
+POST http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIyMSIsImV4cCI6MTY0NTI1NjE0NX0.hqASwW67LfPqyplGd6hNQQYnNCxPpGvJ_u0boxhDGZM
+
+{
+  "teamName": "test1"
+}
+
+<> 2022-02-19T161752.200.json
+
+###
+
+DELETE http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIyMSIsImV4cCI6MTY0NTI1NjE0NX0.hqASwW67LfPqyplGd6hNQQYnNCxPpGvJ_u0boxhDGZM
+
+{
+  "teamId": 6
+}
+
+###
+
+DELETE http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIyMSIsImV4cCI6MTY0NTI1NjE0NX0.hqASwW67LfPqyplGd6hNQQYnNCxPpGvJ_u0boxhDGZM
+
+{
+  "teamId": 5
+}
+
+###
+
+PATCH http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIyMSIsImV4cCI6MTY0NTI1NjE0NX0.hqASwW67LfPqyplGd6hNQQYnNCxPpGvJ_u0boxhDGZM
+
+{
+  "teamId": 1,
+  "teamName": "update"
+}
+
+###
+
+PATCH http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIyMSIsImV4cCI6MTY0NTI1NjE0NX0.hqASwW67LfPqyplGd6hNQQYnNCxPpGvJ_u0boxhDGZM
+
+{
+  "teamId": 1,
+  "teamName": "update"
+}
+
+###
+
+POST http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIyMSIsImV4cCI6MTY0NTI1NjE0NX0.hqASwW67LfPqyplGd6hNQQYnNCxPpGvJ_u0boxhDGZM
+
+{
+  "teamName": "test"
+}
+
+<> 2022-02-19T161117.200.json
+
+###
+
+POST http://localhost:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId": "mijeongo",
+  "memberPassword": "1111"
+}
+
+<> 2022-02-19T160546.200.json
+
+###
+
+POST http://localhost:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId": "mijeongo",
+  "memberPassword": "1111"
+}
+
+###
+
+GET http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNSIsImV4cCI6MTY0NDIxODU0OH0.SvIOcUnJHRa6TKC09B71kOFshSoDDD5UDhokQsgWT9k
+
+{
+  "teamId": 5,
+  "teamDate": "2020-01-01"
+}
+
+<> 2022-02-07T172553.500.json
+
+###
+
+GET http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNSIsImV4cCI6MTY0NDIxODU0OH0.SvIOcUnJHRa6TKC09B71kOFshSoDDD5UDhokQsgWT9k
+
+{
+  "teamId": 1,
+  "teamDate": "2020-01-01"
+}
+
+<> 2022-02-07T165029.500.json
+
+###
+
+GET http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNSIsImV4cCI6MTY0NDIxODU0OH0.SvIOcUnJHRa6TKC09B71kOFshSoDDD5UDhokQsgWT9k
+
+{
+  "teamId": 1,
+  "teamDate": ""
+}
+
+<> 2022-02-07T162420.500.json
+
+###
+
+POST http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNSIsImV4cCI6MTY0NDIxODU0OH0.SvIOcUnJHRa6TKC09B71kOFshSoDDD5UDhokQsgWT9k
+
+{
+  "teamName": "test"
+}
+
+<> 2022-02-07T160140.200.json
+
+###
+
+POST http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNSIsImV4cCI6MTY0NDIxODU0OH0.SvIOcUnJHRa6TKC09B71kOFshSoDDD5UDhokQsgWT9k
+
+{
+  "teamName": "test"
+}
+
+<> 2022-02-07T155542.200.json
+
+###
+
+GET http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNSIsImV4cCI6MTY0NDIxODU0OH0.SvIOcUnJHRa6TKC09B71kOFshSoDDD5UDhokQsgWT9k
+
+{
+  "teamName": "test"
+}
+
+<> 2022-02-07T155403.500.json
+
+###
+

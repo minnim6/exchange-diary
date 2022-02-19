@@ -5,7 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1556ea7d-1f3b-4147-ad2a-dbee13ff23ad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integrationTest/api.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/JwtController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/JwtController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/TeamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/TeamController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/Team.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$RequestTeam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$RequestTeam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$RequestTeamId.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$RequestTeamId.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseInfo$CheckWroteMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseInfo$CheckWroteMy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseLink.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseLink.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/jwt/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/jwt/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/controller/TeamControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/controller/TeamControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/service/TeamServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/service/TeamServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/JwtController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/JwtController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/TeamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/infrastructure/jwt/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/infrastructure/jwt/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/exchange/diary/controller/TeamControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exchange/diary/controller/TeamControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/exchange/diary/service/TeamServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exchange/diary/service/TeamServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +106,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -119,7 +143,42 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TeamServiceTest.createTeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="api | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/integrationTest/api.http" index="6" requestIdentifier="#6" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="TeamControllerTest.joinTeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diary.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exchange.diary.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exchange.diary.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.controller.TeamControllerTest" />
+      <option name="METHOD_NAME" value="joinTeam" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeamControllerTest.updateTeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diary.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exchange.diary.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exchange.diary.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.controller.TeamControllerTest" />
+      <option name="METHOD_NAME" value="updateTeam" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeamServiceTest.joinTeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="diary.test" />
       <extension name="coverage">
         <pattern>
@@ -129,55 +188,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.exchange.diary.service" />
       <option name="MAIN_CLASS_NAME" value="com.exchange.diary.service.TeamServiceTest" />
-      <option name="METHOD_NAME" value="createTeamTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TeamServiceTest.deleteTeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="diary.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.exchange.diary.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.exchange.diary.service" />
-      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.service.TeamServiceTest" />
-      <option name="METHOD_NAME" value="deleteTeamTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TeamServiceTest.getTeamInfoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="diary.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.exchange.diary.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.exchange.diary.service" />
-      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.service.TeamServiceTest" />
-      <option name="METHOD_NAME" value="getTeamInfoTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TeamTest.createTeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="diary.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.exchange.diary.integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.exchange.diary.integration" />
-      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.integration.TeamTest" />
-      <option name="METHOD_NAME" value="createTeamTest" />
+      <option name="METHOD_NAME" value="joinTeamTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,10 +204,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.exchange-diary [build]" />
-        <item itemvalue="JUnit.TeamServiceTest.getTeamInfoTest" />
-        <item itemvalue="JUnit.TeamServiceTest.deleteTeamTest" />
-        <item itemvalue="JUnit.TeamServiceTest.createTeamTest" />
-        <item itemvalue="JUnit.TeamTest.createTeamTest" />
+        <item itemvalue="JUnit.TeamControllerTest.updateTeam" />
+        <item itemvalue="JUnit.TeamControllerTest.joinTeam" />
+        <item itemvalue="JUnit.TeamServiceTest.joinTeamTest" />
+        <item itemvalue="HTTP Request.api | #6" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +238,10 @@
       <workItem from="1643968422513" duration="7164000" />
       <workItem from="1644047475074" duration="6423000" />
       <workItem from="1644061859779" duration="13871000" />
-      <workItem from="1644215024601" duration="1047000" />
+      <workItem from="1644215024601" duration="6442000" />
+      <workItem from="1644326570675" duration="1592000" />
+      <workItem from="1645245256553" duration="7247000" />
+      <workItem from="1645258560015" duration="659000" />
     </task>
     <servers />
   </component>

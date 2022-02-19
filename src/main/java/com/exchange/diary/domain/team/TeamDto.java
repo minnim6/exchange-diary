@@ -20,6 +20,13 @@ public class TeamDto {
         String teamName;
     }
 
+    @NoArgsConstructor
+    @Getter
+    public static class RequestUpdateTeam{
+        Long teamId;
+        String teamName;
+    }
+
     @AllArgsConstructor
     @NoArgsConstructor
     @Getter

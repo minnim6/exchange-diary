@@ -15,7 +15,7 @@ public class JwtController {
     private final JwtUtil jwtUtil;
 
     @PostMapping("/jwt")
-    public Jwt.ResponseAccessToken RequestAccessToken(@RequestBody Jwt.Request request){
+    public Jwt.ResponseAccessToken RequestAccessTokenΩ(@RequestBody Jwt.Request request){
         return jwtUtil.requestAccessToken(request);
     }
 

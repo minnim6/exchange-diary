@@ -43,5 +43,8 @@ public class Team {
         )+teamName;
     }
 
+    public void updateTeamName(String teamName){
+        this.teamName = teamName;
+    }
 
 }
