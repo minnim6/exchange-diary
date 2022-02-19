@@ -5,8 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1556ea7d-1f3b-4147-ad2a-dbee13ff23ad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integrationTest/api.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/JwtController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/JwtController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/TeamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/application/TeamController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/Team.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$RequestTeam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$RequestTeam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$RequestTeamId.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$RequestTeamId.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseInfo$CheckWroteMy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseInfo$CheckWroteMy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseLink.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto$ResponseLink.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/domain/team/TeamService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/jwt/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/exchange/diary/infrastructure/jwt/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/controller/TeamControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/controller/TeamControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/service/TeamServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/exchange/diary/service/TeamServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/JwtController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/JwtController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/application/TeamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/Team.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/domain/team/TeamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exchange/diary/infrastructure/jwt/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exchange/diary/infrastructure/jwt/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/exchange/diary/controller/TeamControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exchange/diary/controller/TeamControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/exchange/diary/service/TeamServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exchange/diary/service/TeamServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +106,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -97,28 +121,7 @@
       <recent name="com.exchange.diary.infrastructure.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DiaryApplication">
-    <configuration name="exchange-diary [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="buildDependents" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.exchange-diary [build]">
     <configuration name="exchange-diary [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -140,22 +143,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MemberControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="diary.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.exchange.diary.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.exchange.diary.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.controller.MemberControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="api | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/integrationTest/api.http" index="6" requestIdentifier="#6" runType="Run single request">
+      <method v="2" />
     </configuration>
-    <configuration name="MemberControllerTest.getMember" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeamControllerTest.joinTeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="diary.test" />
       <extension name="coverage">
         <pattern>
@@ -164,14 +155,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.exchange.diary.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.controller.MemberControllerTest" />
-      <option name="METHOD_NAME" value="getMember" />
+      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.controller.TeamControllerTest" />
+      <option name="METHOD_NAME" value="joinTeam" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MemberControllerTest.updateMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeamControllerTest.updateTeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="diary.test" />
       <extension name="coverage">
         <pattern>
@@ -180,8 +171,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.exchange.diary.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.controller.MemberControllerTest" />
-      <option name="METHOD_NAME" value="updateMemberTest" />
+      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.controller.TeamControllerTest" />
+      <option name="METHOD_NAME" value="updateTeam" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeamServiceTest.joinTeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diary.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exchange.diary.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exchange.diary.service" />
+      <option name="MAIN_CLASS_NAME" value="com.exchange.diary.service.TeamServiceTest" />
+      <option name="METHOD_NAME" value="joinTeamTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -197,10 +204,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.exchange-diary [build]" />
-        <item itemvalue="Gradle.exchange-diary [buildDependents]" />
-        <item itemvalue="JUnit.MemberControllerTest" />
-        <item itemvalue="JUnit.MemberControllerTest.getMember" />
-        <item itemvalue="JUnit.MemberControllerTest.updateMemberTest" />
+        <item itemvalue="JUnit.TeamControllerTest.updateTeam" />
+        <item itemvalue="JUnit.TeamControllerTest.joinTeam" />
+        <item itemvalue="JUnit.TeamServiceTest.joinTeamTest" />
+        <item itemvalue="HTTP Request.api | #6" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +227,21 @@
       <workItem from="1643135619458" duration="2612000" />
       <workItem from="1643194885706" duration="5014000" />
       <workItem from="1643263321878" duration="1203000" />
-      <workItem from="1643439595772" duration="5750000" />
+      <workItem from="1643439595772" duration="11144000" />
+      <workItem from="1643519731871" duration="31000" />
+      <workItem from="1643527477527" duration="3674000" />
+      <workItem from="1643700426647" duration="1634000" />
+      <workItem from="1643810752988" duration="1862000" />
+      <workItem from="1643871362943" duration="6054000" />
+      <workItem from="1643940356526" duration="1710000" />
+      <workItem from="1643942302269" duration="1888000" />
+      <workItem from="1643968422513" duration="7164000" />
+      <workItem from="1644047475074" duration="6423000" />
+      <workItem from="1644061859779" duration="13871000" />
+      <workItem from="1644215024601" duration="6442000" />
+      <workItem from="1644326570675" duration="1592000" />
+      <workItem from="1645245256553" duration="7247000" />
+      <workItem from="1645258560015" duration="659000" />
     </task>
     <servers />
   </component>

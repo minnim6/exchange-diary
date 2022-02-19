@@ -436,12 +436,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 </head>
-<body class="article">
+<body class="article toc2 toc-left">
 <div id="header">
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_member_sign">member sign</a></li>
+<li><a href="#_member_login">member login</a></li>
+<li><a href="#_member_delete">member delete</a></li>
+<li><a href="#_member_update">member update</a></li>
+<li><a href="#_member_profile">member profile</a></li>
+</ul>
+</div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_member_sign">member sign</h2>
+<h2 id="_member_sign"><a class="link" href="#_member_sign">member sign</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>curl</p>
@@ -561,7 +571,7 @@ X-Frame-Options: DENY</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_member_login">member login</h2>
+<h2 id="_member_login"><a class="link" href="#_member_login">member login</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>curl:</p>
@@ -612,7 +622,7 @@ Content-Length: 131
 {
   "accessToken" : "accessToken",
   "refreshToken" : "refreshToken",
-  "accessTokenExpireTime" : "2022-01-29T07:55:22.603+00:00"
+  "accessTokenExpireTime" : "2022-02-05T08:22:09.162+00:00"
 }</code></pre>
 </div>
 </div>
@@ -648,7 +658,7 @@ Content-Length: 131
 <pre class="highlight nowrap"><code>{
   "accessToken" : "accessToken",
   "refreshToken" : "refreshToken",
-  "accessTokenExpireTime" : "2022-01-29T07:55:22.603+00:00"
+  "accessTokenExpireTime" : "2022-02-05T08:22:09.162+00:00"
 }</code></pre>
 </div>
 </div>
@@ -689,7 +699,7 @@ Content-Length: 131
 </div>
 </div>
 <div class="sect1">
-<h2 id="_member_delete">member delete</h2>
+<h2 id="_member_delete"><a class="link" href="#_member_delete">member delete</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>curl</p>
@@ -736,7 +746,7 @@ X-Frame-Options: DENY</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_member_update">member update</h2>
+<h2 id="_member_update"><a class="link" href="#_member_update">member update</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>curl</p>
@@ -782,12 +792,12 @@ Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Pragma: no-cache
 Expires: 0
 X-Frame-Options: DENY
-Content-Length: 106
+Content-Length: 87
 
 {
   "memberId" : "id",
   "memberNickname" : "pass",
-  "memberJoinDate" : "2022-01-29T07:55:22.728+00:00"
+  "memberJoinDate" : "2022-02-05"
 }</code></pre>
 </div>
 </div>
@@ -822,7 +832,7 @@ Content-Length: 106
 <pre class="highlight nowrap"><code>{
   "memberId" : "id",
   "memberNickname" : "pass",
-  "memberJoinDate" : "2022-01-29T07:55:22.728+00:00"
+  "memberJoinDate" : "2022-02-05"
 }</code></pre>
 </div>
 </div>
@@ -887,7 +897,7 @@ Content-Length: 106
 </div>
 </div>
 <div class="sect1">
-<h2 id="_member_profile">member profile</h2>
+<h2 id="_member_profile"><a class="link" href="#_member_profile">member profile</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>curl</p>
@@ -921,12 +931,12 @@ Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Pragma: no-cache
 Expires: 0
 X-Frame-Options: DENY
-Content-Length: 106
+Content-Length: 87
 
 {
   "memberId" : "id",
   "memberNickname" : "pass",
-  "memberJoinDate" : "2022-01-29T07:55:22.669+00:00"
+  "memberJoinDate" : "2022-02-05"
 }</code></pre>
 </div>
 </div>
@@ -947,7 +957,7 @@ Content-Length: 106
 <pre class="highlight nowrap"><code>{
   "memberId" : "id",
   "memberNickname" : "pass",
-  "memberJoinDate" : "2022-01-29T07:55:22.669+00:00"
+  "memberJoinDate" : "2022-02-05"
 }</code></pre>
 </div>
 </div>
@@ -957,7 +967,7 @@ Content-Length: 106
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1-SNAPSHOT<br>
-Last updated 2022-01-26 20:41:32 +0900
+Last updated 2022-02-05 17:08:28 +0900
 </div>
 </div>
 </body>

@@ -27,6 +27,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.RequestBuilder;
 
+import java.time.LocalDate;
 import java.util.*;
 
 import static org.mockito.ArgumentMatchers.any;
@@ -54,9 +55,6 @@ public class MemberControllerTest {
 
     @MockBean
     private MemberService memberService;
-
-    @MockBean
-    private MemberRepository memberRepository;
 
     @MockBean
     private JwtUtil jwtUtil;
@@ -132,7 +130,7 @@ public class MemberControllerTest {
     @Test
     public void updateMemberTest() throws Exception {
 
-        MemberDto.ResponseInfo responseInfo = new MemberDto.ResponseInfo("id", "pass", new Date());
+        MemberDto.ResponseInfo responseInfo = new MemberDto.ResponseInfo("id", "pass", LocalDate.now());
 
         doReturn(responseInfo).when(memberService).updateMember(any());
 
@@ -180,7 +178,7 @@ public class MemberControllerTest {
     @Test
     public void getMember() throws Exception {
 
-        MemberDto.ResponseInfo responseInfo = new MemberDto.ResponseInfo("id", "pass", new Date());
+        MemberDto.ResponseInfo responseInfo = new MemberDto.ResponseInfo("id", "pass", LocalDate.now());
 
         doReturn(responseInfo).when(memberService).getMember();
 

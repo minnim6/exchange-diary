@@ -47,6 +47,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-security:2.6.2'
 	testImplementation group: 'org.springframework.restdocs', name: 'spring-restdocs-mockmvc', version: '2.0.5.RELEASE'
 	asciidoctorExtensions 'org.springframework.restdocs:spring-restdocs-asciidoctor'
+	testImplementation 'io.rest-assured:rest-assured:3.3.0'
+
 }
 
 test {

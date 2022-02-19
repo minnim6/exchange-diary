@@ -2,6 +2,7 @@ package com.exchange.diary.infrastructure.jwt;
 
 import io.jsonwebtoken.*;
 import lombok.RequiredArgsConstructor;
+import org.apache.logging.log4j.util.Strings;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -35,7 +36,6 @@ public class JwtUtil {
     }
 
     public Jwt.Response createJwt(Long memberNumber){
-        System.out.println(memberNumber);
         Jwt.ResponseAccessToken accessToken = createAccessToken(memberNumber);
         return Jwt.Response.builder()
                 .accessToken(accessToken.getAccessToken())
@@ -63,9 +63,10 @@ public class JwtUtil {
 
         Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
         authorities.add(new SimpleGrantedAuthority("ROLE_MEMBER"));
-        UserDetails userDetails = new User((String) claims.get(AUTHORITIES_KEY), "", authorities);
+        // 상수화!!
+        UserDetails userDetails = new User((String) claims.get(AUTHORITIES_KEY), Strings.EMPTY, authorities);
 
-        return new UsernamePasswordAuthenticationToken(userDetails, "", authorities);
+        return new UsernamePasswordAuthenticationToken(userDetails, Strings.EMPTY, authorities);
     }
 
     public Jwt.ResponseAccessToken createAccessToken(Long memberNumber){
@@ -110,7 +111,7 @@ public class JwtUtil {
     }
 
     private Long getMemberNumber(String token){
-        return (Long) paresClaims(token).get(AUTHORITIES_KEY);
+        return Long.parseLong((String) paresClaims(token).get(AUTHORITIES_KEY));
     }
 
     private boolean isCheckAuthorities(Claims claims) {

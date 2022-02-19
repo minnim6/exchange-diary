@@ -1,3 +1,7 @@
+:toc: left
+:toclevels: 3
+:sectlinks:
+
 == member sign
 curl
 include::build/generated-snippets/member/sign/curl-request.adoc[]
@@ -69,3 +73,55 @@ httpie-request
 include::build/generated-snippets/member/profile/httpie-request.adoc[]
 response-body
 include::build/generated-snippets/member/profile/response-body.adoc[]
+
+== team create
+curl
+include::build/generated-snippets/team/create/curl-request.adoc[]
+http-request
+include::build/generated-snippets/team/create/http-request.adoc[]
+http-response
+include::build/generated-snippets/team/create/http-response.adoc[]
+httpie-request
+include::build/generated-snippets/team/create/httpie-request.adoc[]
+request-body
+include::build/generated-snippets/team/create/request-body.adoc[]
+request-fields
+include::build/generated-snippets/team/create/request-fields.adoc[]
+response-body
+include::build/generated-snippets/team/create/response-body.adoc[]
+response-fields
+include::build/generated-snippets/team/create/response-fields.adoc[]
+
+== team delete
+curl
+include::build/generated-snippets/team/delete/curl-request.adoc[]
+http-request
+include::build/generated-snippets/team/delete/http-request.adoc[]
+http-response
+include::build/generated-snippets/team/delete/http-response.adoc[]
+httpie-request
+include::build/generated-snippets/team/delete/httpie-request.adoc[]
+request-body
+include::build/generated-snippets/team/delete/request-body.adoc[]
+request-fields
+include::build/generated-snippets/team/delete/request-fields.adoc[]
+response-body
+include::build/generated-snippets/team/delete/response-body.adoc[]
+
+== team info
+curl
+include::build/generated-snippets/team/info/curl-request.adoc[]
+http-request
+include::build/generated-snippets/team/info/http-request.adoc[]
+http-response
+include::build/generated-snippets/team/info/http-response.adoc[]
+httpie-request
+include::build/generated-snippets/team/info/httpie-request.adoc[]
+request-body
+include::build/generated-snippets/team/info/request-body.adoc[]
+request-fields
+include::build/generated-snippets/team/info/request-fields.adoc[]
+response-body
+include::build/generated-snippets/team/info/response-body.adoc[]
+response-fields
+include::build/generated-snippets/team/info/response-fields.adoc[]

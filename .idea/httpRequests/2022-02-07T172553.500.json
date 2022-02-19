@@ -1,0 +1,6 @@
+{
+  "timestamp": "2022-02-07T08:25:53.472+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/team"
+}

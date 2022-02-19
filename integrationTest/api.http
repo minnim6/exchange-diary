@@ -1,0 +1,58 @@
+POST http://localhost:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId": "test1",
+  "memberPassword": "pass"
+}
+
+###
+POST http://localhost:8080/member/sign
+Content-Type: application/json
+
+{
+  "memberId": "test1",
+  "memberNickname": "nickname",
+  "memberPassword": "pass"
+}
+###
+POST http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzNyIsImV4cCI6MTY0NTI1OTA1M30.BlVtldxF8VsIVhMkFAqhmznGagZaS4_tKZPjtdpYfdc
+
+{
+  "teamName": "teamTest"
+}
+###
+PATCH http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIyMSIsImV4cCI6MTY0NTI1NjE0NX0.hqASwW67LfPqyplGd6hNQQYnNCxPpGvJ_u0boxhDGZM
+
+{
+  "teamId": 1,
+  "teamName": "update"
+}
+
+###
+DELETE http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIyMSIsImV4cCI6MTY0NTI1NjE0NX0.hqASwW67LfPqyplGd6hNQQYnNCxPpGvJ_u0boxhDGZM
+
+{
+  "teamId": 7
+}
+
+###
+GET http://localhost:8080/team
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzOCIsImV4cCI6MTY0NTI1OTE1Mn0.8qBCcjQEnEDuYW21lUCK2if_SD5Ovb-yNAidPbhITIs
+
+{
+  "teamId": 4,
+  "teamDate": "2022-01-22"
+}
+
+###
+POST http://localhost:8080/team/bmlja25hbWU=teamTest
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJOdW1iZXIiOiIzOCIsImV4cCI6MTY0NTI1OTE1Mn0.8qBCcjQEnEDuYW21lUCK2if_SD5Ovb-yNAidPbhITIs
